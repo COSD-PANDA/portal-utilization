@@ -1,5 +1,5 @@
-## portal-utilization
-# Scripts to calculate the utilization rate for datasets
+# portal-utilization
+### Scripts to calculate the utilization rate for datasets
 
 The utilization rate is a weighted average of number of downloads per website visitor. This is calculated per dataset page then summed to get an overall number for the portal.
 
