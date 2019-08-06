@@ -75,7 +75,7 @@ users_by_page = visits_pages.groupby(['page_path_2']).agg({'users': 'sum','pagev
 # In[9]:
 
 print("Calculating monthly users by page and writing to csv")
-visits_pages.groupby(['page_path_2','date_month']).agg({'users': 'sum','pageviews':'sum'}).reset_index().to_csv('portal-pages-months.csv',index=False)
+visits_pages.groupby(['page_path_2','date_month']).agg({'users': 'sum','pageviews':'sum'}).reset_index().to_csv('portal-pages-months-fy19.csv',index=False)
 
 
 # In[11]:
@@ -128,7 +128,7 @@ keen_page_groups = keen_visits_merge.loc[keen_visits_merge['page_path_2'] != '']
 keen_nopages = keen_visits_merge.loc[keen_visits_merge['page_path_2'].isnull()]
 
 print("Writing drupal activity per month")
-keen_nopages.loc[keen_nopages['log.key'].str.startswith('city_docs/')].groupby(['log.key','date_month']).aggregate({'result':'sum'}).reset_index().to_csv('keen-drupal-months.csv',index=False)
+keen_nopages.loc[keen_nopages['log.key'].str.startswith('city_docs/')].groupby(['log.key','date_month']).aggregate({'result':'sum'}).reset_index().to_csv('keen-drupal-months-fy19.csv',index=False)
 
 
 # In[17]:
@@ -246,7 +246,7 @@ page_downloads = keen_page_groups.groupby(['page_path_2','user_agent_type']).agg
 # In[29]:
 
 print("Writing Keen activity per page per ua")
-keen_page_groups.to_csv('keen-pages-ua.csv',index=False)
+keen_page_groups.to_csv('keen-pages-ua-fy19.csv',index=False)
 
 
 # In[30]:
@@ -305,7 +305,7 @@ print(total_weighted_dl)
 # In[38]:
 
 print("Writing utilization per page")
-keen_dl_users_page.to_csv('portal-utilization.csv',index=False)
+keen_dl_users_page.to_csv('portal-utilization-fy19.csv',index=False)
 
 
 # Utilization is the number of downloads per user, weighted according to the number of links on the page the user visited
