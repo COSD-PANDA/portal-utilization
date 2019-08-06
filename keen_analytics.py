@@ -12,7 +12,7 @@ import numpy as np
 from ua_parser import user_agent_parser
 import re
 from datetime import datetime, timedelta
-
+fy = 18
 
 # In[2]:
 
@@ -121,18 +121,18 @@ def process_results(df):
 
 # Here, we are making the request for data to Keen
 
-months_tf = [{"start":f"2018-07-01T00:00:00.000Z","end":f"2018-08-01T00:00:00.000Z"},
-             {"start":f"2018-08-01T00:00:00.000Z","end":f"2018-09-01T00:00:00.000Z"},
-             {"start":f"2018-09-01T00:00:00.000Z","end":f"2018-10-01T00:00:00.000Z"},
-             {"start":f"2018-10-01T00:00:00.000Z","end":f"2018-11-01T00:00:00.000Z"},
-             {"start":f"2018-11-01T00:00:00.000Z","end":f"2018-12-01T00:00:00.000Z"},
-             {"start":f"2018-12-01T00:00:00.000Z","end":f"2019-01-01T00:00:00.000Z"},
-             {"start":f"2019-01-01T00:00:00.000Z","end":f"2019-02-01T00:00:00.000Z"},
-             {"start":f"2019-02-01T00:00:00.000Z","end":f"2019-03-01T00:00:00.000Z"},
-             {"start":f"2019-03-01T00:00:00.000Z","end":f"2019-04-01T00:00:00.000Z"},
-             {"start":f"2019-04-01T00:00:00.000Z","end":f"2019-05-01T00:00:00.000Z"},
-             {"start":f"2019-05-01T00:00:00.000Z","end":f"2019-06-01T00:00:00.000Z"},
-             {"start":f"2019-06-01T00:00:00.000Z","end":f"2019-07-01T00:00:00.000Z"},
+months_tf = [{"start":f"20{fy-1}-07-01T00:00:00.000Z","end":f"20{fy-1}-08-01T00:00:00.000Z"},
+             {"start":f"20{fy-1}-08-01T00:00:00.000Z","end":f"20{fy-1}-09-01T00:00:00.000Z"},
+             {"start":f"20{fy-1}-09-01T00:00:00.000Z","end":f"20{fy-1}-10-01T00:00:00.000Z"},
+             {"start":f"20{fy-1}-10-01T00:00:00.000Z","end":f"20{fy-1}-11-01T00:00:00.000Z"},
+             {"start":f"20{fy-1}-11-01T00:00:00.000Z","end":f"20{fy-1}-12-01T00:00:00.000Z"},
+             {"start":f"20{fy-1}-12-01T00:00:00.000Z","end":f"20{fy}-01-01T00:00:00.000Z"},
+             {"start":f"20{fy}-01-01T00:00:00.000Z","end":f"20{fy}-02-01T00:00:00.000Z"},
+             {"start":f"20{fy}-02-01T00:00:00.000Z","end":f"20{fy}-03-01T00:00:00.000Z"},
+             {"start":f"20{fy}-03-01T00:00:00.000Z","end":f"20{fy}-04-01T00:00:00.000Z"},
+             {"start":f"20{fy}-04-01T00:00:00.000Z","end":f"20{fy}-05-01T00:00:00.000Z"},
+             {"start":f"20{fy}-05-01T00:00:00.000Z","end":f"20{fy}-06-01T00:00:00.000Z"},
+             {"start":f"20{fy}-06-01T00:00:00.000Z","end":f"20{fy}-07-01T00:00:00.000Z"},
             ]
 
 dfs_year = []
@@ -248,7 +248,7 @@ keen_pagepath.loc[:,'page_path_2'] = keen_final_pagepath
 
 print("Writing dataset downloads")
 
-keen_pagepath.to_csv(f'dataset_downloads_fy19.csv',index=False)
+keen_pagepath.to_csv(f'dataset_downloads_fy{fy}.csv',index=False)
 
 
 # In[22]:
