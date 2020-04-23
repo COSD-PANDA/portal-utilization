@@ -8,24 +8,13 @@ import pandas as pd
 import numpy as np
 from pandas.io.json import json_normalize
 import json
-fy = 18
+fy = 19
 
 
-# In[3]:
 
 print("Reading GA datasets for portal analytics")
-#visits_19 = pd.read_csv('~/Code/docker-airflow/data/prod/portal_pages_2019_datasd.csv',parse_dates=['date'])
-visits_18 = pd.read_csv('~/Code/docker-airflow/data/prod/portal_pages_2018_datasd.csv',parse_dates=['date'])
-visits_17 = pd.read_csv('~/Code/docker-airflow/data/prod/portal_pages_2017_datasd.csv',parse_dates=['date'])
+visits = pd.read_csv('http://seshat.datasd.org.s3.amazonaws.com/web_analytics/portal_pages_datasd.csv',parse_dates=['date'])
 
-
-# In[4]:
-
-print("Combining files and filtering for just dataset pages")
-all_visits = pd.concat([visits_18,visits_17],ignore_index=True)
-
-
-# In[ ]:
 
 
 #df_year_process.groupby(['user_agent_family','log.key']).agg({'result':'sum'}).reset_index().to_csv('keen-output/dataset_ua_sum.csv',index=False)
@@ -35,7 +24,11 @@ all_visits = pd.concat([visits_18,visits_17],ignore_index=True)
 
 
 # Pull visits from the portal pages dataset
-visits_pages = all_visits.loc[all_visits['page_path_1'] == '/datasets/',['date','page_path_2','users','pageviews']].copy()
+visits_pages = visits.loc[(visits['page_path_1'] == '/datasets/') 
+& ((visits['date'] >= f'20{fy-1}-07-01')&(visits['date'] < f'20{fy}-07-01')),
+['date','page_path_2','users','pageviews']].copy()
+
+print(f"Filtering GA for fiscal year and datasets for a total of {visits_pages.shape[0]} records")
 
 
 # In[6]:
@@ -62,6 +55,7 @@ visits_pages['date'] = visits_pages['date'].astype(str)
 
 # Get total number of users
 total_users = visits_pages['users'].sum()
+print(f"Total users is {total_users}")
 
 # Get users per month
 monthly_users = visits_pages.groupby(['date_month']).agg({'users':'sum'}).reset_index()
@@ -83,22 +77,15 @@ visits_pages.groupby(['page_path_2','date_month']).agg({'users': 'sum','pageview
 # In[11]:
 
 print("Reading in Keen counts")
-keen = pd.read_csv(f'dataset_downloads_fy{18}.csv',parse_dates=['date_full'])
+keen = pd.read_csv(f'dataset_downloads_fy{fy}.csv',parse_dates=['date_full'])
 keen['date_full'] = keen['date_full'].astype(str)
-
-
-# In[12]:
-
-print("Subsetting GA to get fiscal year")
-# Create fy subset for ga
-visits_pages_fy = visits_pages.loc[(visits_pages['date']>=f'20{fy-1}-07-01')&(visits_pages['date']<f'20{fy}-07-01')].copy()
 
 
 # In[13]:
 
 print("Joining GA to Keen")
 # Join page visits to keen page groups
-keen_visits_merge = pd.merge(keen,visits_pages_fy[['page_path_2','pageviews','date']],how="left",left_on=['page_path_2','date_full'],right_on=['page_path_2','date'])
+keen_visits_merge = pd.merge(keen,visits_pages[['page_path_2','pageviews','date']],how="left",left_on=['page_path_2','date_full'],right_on=['page_path_2','date'])
 
 
 # In[14]:
@@ -168,47 +155,62 @@ keen_page_groups = keen_page_groups.drop(columns=['pageviews'])
 
 # In[21]:
 
+# The strategy for this is to capture the majority of legitimate pageviews
+# And discard the rest
+# Other exists in this dictionary just for reference
+# Bots, crawlers and spiders are removed in previous script
 
-ua_lookup = {'ua':'type',
-'Amazon Silk':'browser',
-'Android':'browser',
-'Apache-HttpClient':'script',
-'CFNetwork':'other',
-'Chrome':'browser',
-'Chrome Mobile':'browser',
-'Chrome Mobile iOS':'browser',
-'Chrome Mobile WebView':'other',
-'Chromium':'browser',
-'com.apple.WebKit.Networking':'other',
-'curl':'script',
-'Drupal':'script',
-'Edge':'browser',
-'Facebook':'other',
-'Firefox':'browser',
-'Firefox Mobile':'browser',
-'IE':'browser',
-'Jupyter kernel':'script',
-'Mobile Safari':'browser',
-'Mobile Safari UI/WKWebView':'other',
-'Opera':'browser',
-'Other':'other',
-'Python Requests':'script',
-'Python-urllib':'script',
-'Safari':'browser',
-'Samsung Internet':'browser',
-'Vivaldi':'browser',
-'Wget':'script',
-'Yandex Browser':'browser'}
+ua_lookup = {
+  'browser':
+    [
+      'Amazon Silk',
+      'Android',
+      'CFNetwork',
+      'Chrome',
+      'Chrome Mobile',
+      'Chrome Mobile iOS',
+      'Chromium',
+      'Edge',
+      'Firefox',
+      'Firefox Mobile',
+      'IE',
+      'Mobile Safari',
+      'Opera',
+      'Safari',
+      'Samsung Internet',
+      'Vivaldi',
+      'Yandex Browser',
+      'HeadlessChrome',
+      'Chrome Mobile WebView',
+      'Mobile Safari UI/WKWebView'
+    ],
+  'script':[
+    'Apache-HttpClient',
+    'curl',
+    'Drupal',
+    'Jupyter kernel',
+    'Python Requests',
+    'Python-urllib',
+    'Wget',
+    'aws-sdk-java'
+  ],
+  'other':[
+    'Go-http-client', # This is Go building static site
+    'Tableau' # This is the web data connector
+    'Cyberduck' # This is downloads from Cyberduck
+  ]
+}
 
 
 # In[22]:
 
 
 def assign_ua_type(ua_family):
-    if ua_family in ua_lookup:
-        return ua_lookup[ua_family]
+    if ua_family in ua_lookup.get('browser'):
+        return 'browser'
+    elif ua_family in ua_lookup.get('script'):
+        return 'script'
     else:
-        print(f"{ua_family} has no type")
         return "other"
         
 
@@ -236,8 +238,11 @@ monthly_downloads = keen_page_groups.groupby(['date_month','user_agent_type']).a
 
 
 # Total downloads, all sources
-total_downloads = keen_page_groups['result'].sum()
+total_downloads = keen_page_groups.loc[(keen_page_groups['user_agent_type'] == 'browser') |
+(keen_page_groups['user_agent_type'] == 'script'),
+'result'].sum()
 
+print(f"Total downloads is {total_downloads}")
 
 # In[27]:
 
@@ -302,7 +307,7 @@ keen_users_links = keen_users_links.assign(dl_user_weight=weighted_dl)
 
 keen_dl_users_page = keen_users_links.drop(columns=['pageviews','counts','counts_inverted'])
 total_weighted_dl = keen_dl_users_page['dl_user_weight'].sum()
-print(total_weighted_dl)
+print(f"Overall utilization is {total_weighted_dl}")
 
 
 # In[38]:

@@ -12,7 +12,7 @@ import numpy as np
 from ua_parser import user_agent_parser
 import re
 from datetime import datetime, timedelta
-fy = 18
+fy = 19
 
 # In[2]:
 
@@ -72,19 +72,22 @@ def filter_files(df):
 
 # In[6]:
 
+ua_remove = ['ia_archiver',
+'BingPreview',
+'Qwantify',
+'Apple Mail',
+'Facebook',
+'Outlook',
+'Facebook Messenger',
+'Yahoo! Slurp'
+]
 
 # This function removes user agents that are bots
 def remove_bots(df):
     print(df.shape)
     crawl_filter = df.loc[(~df['user_agent_family'].str.contains('crawl',flags=re.IGNORECASE, regex=True))]
     bot_filter = crawl_filter.loc[(~crawl_filter['user_agent_family'].str.contains('bot',flags=re.IGNORECASE, regex=True))]
-    spider_filter = bot_filter.loc[(~bot_filter['user_agent_family'].str.contains('spider',flags=re.IGNORECASE, regex=True))]
-    final = spider_filter.loc[(spider_filter['user_agent_family'] != 'ia_archiver') &
-                              (spider_filter['user_agent_family'] != 'BingPreview') &
-                              (spider_filter['user_agent_family'] != 'Qwantify') &
-                              (spider_filter['user_agent_family'] != 'Apple Mail') &
-                              (spider_filter['user_agent_family'] != 'Facebook')
-                             ]
+    final = bot_filter.loc[(~bot_filter['user_agent_family'].str.contains('spider',flags=re.IGNORECASE, regex=True))]
     print(final.shape)
     
     return final
@@ -137,6 +140,7 @@ months_tf = [{"start":f"20{fy-1}-07-01T00:00:00.000Z","end":f"20{fy-1}-08-01T00:
 
 dfs_year = []
 
+print("looping through months")
 for index, month in enumerate(months_tf):
     downloads = keen.count("s3_seshat.datasd.org_logs",
                                 timeframe=month,
@@ -152,8 +156,9 @@ for index, month in enumerate(months_tf):
 
 # In[10]:
 
-
+print("Concatting months")
 df_year_all = pd.concat(dfs_year,ignore_index=True)
+
 
 df_year_process = process_results(df_year_all)
 
@@ -181,7 +186,12 @@ resource_files = json_normalize(data=datasets['dataset'],
                                 meta_prefix='page_'
                                )
 
-resource_files.columns = ['type','download_url','format','media_type','file_name','title']
+resource_files.columns = ['file_name',
+'type',
+'download_url',
+'media_type',
+'format',
+'title']
 
 dataset_pages_join = pd.merge(resource_files[['download_url',
                                               'format',
@@ -201,7 +211,6 @@ final_dataset_pages['log.key'] = final_dataset_pages['download_url'].apply(lambd
 
 final_dataset_pages['page_path_2'] = final_dataset_pages['url'].apply(lambda x: x.replace('/datasets',''))
 
-
 # In[15]:
 
 print("Merging dataset info with Keen results")
@@ -213,10 +222,10 @@ keen_pagepath = pd.merge(df_year_final,final_dataset_pages[['log.key','page_path
 
 # In the case where a filename was changed, probably to better follow standards, we can manually match 
 # The file to the page path
-print("Looking up changes to datasets to fix for consistency")
-page_path_old_links = pd.read_csv('old-file-lookup.csv')
-old_links = page_path_old_links['old_links'].to_list()
-old_links_page = page_path_old_links['page_path_2'].to_list()
+# print("Looking up changes to datasets to fix for consistency")
+# page_path_old_links = pd.read_csv('old-file-lookup.csv')
+# old_links = page_path_old_links['old_links'].to_list()
+# old_links_page = page_path_old_links['page_path_2'].to_list()
 
 
 # In[17]:
@@ -237,13 +246,13 @@ def get_page(row):
 # In[18]:
 
 
-keen_final_pagepath = keen_pagepath.apply(get_page,axis=1)
+#keen_final_pagepath = keen_pagepath.apply(get_page,axis=1)
 
 
 # In[19]:
 
 
-keen_pagepath.loc[:,'page_path_2'] = keen_final_pagepath
+#keen_pagepath.loc[:,'page_path_2'] = keen_final_pagepath
 
 
 print("Writing dataset downloads")
