@@ -70,17 +70,6 @@ def filter_files(df):
     return df_filter
 
 
-# In[6]:
-
-ua_remove = ['ia_archiver',
-'BingPreview',
-'Qwantify',
-'Apple Mail',
-'Facebook',
-'Outlook',
-'Facebook Messenger',
-'Yahoo! Slurp'
-]
 
 # This function removes user agents that are bots
 def remove_bots(df):
@@ -176,8 +165,8 @@ df_year_final = df_year_process.drop(columns=['log.user_agent','timeframe.end','
 # Or from a time period that makes sense
 
 print("Processing json files to get dataset info")
-dataset_urls = pd.read_json('datasets.json')
-with open("data.json", "r") as read_file:
+dataset_urls = pd.read_json(f'files/fy{fy}/datasets.json')
+with open(f"files/fy{fy}/data.json", "r") as read_file:
     datasets = json.load(read_file)
 
 resource_files = json_normalize(data=datasets['dataset'], 
@@ -216,51 +205,51 @@ final_dataset_pages['page_path_2'] = final_dataset_pages['url'].apply(lambda x: 
 print("Merging dataset info with Keen results")
 keen_pagepath = pd.merge(df_year_final,final_dataset_pages[['log.key','page_path_2']],left_on='log.key',right_on='log.key',how="left")
 
+# Here's how you make the old file lookup
+# missing_keys = keen_pagepath.loc[keen_pagepath['page_path_2'].isna(),'log.key'].tolist()
+# missing_keys_set = set(missing_keys)
+# old_file_lookup = pd.DataFrame(missing_keys_set,columns=['log.key'])
+# old_file_lookup['page_path_2'] = ''
+# old_file_lookup.to_csv(f'files/fy{fy}/old-file-lookup.csv',index=False)
+
+## Use datasets.json to fill in the page path
 
 # In[16]:
 
 
-# In the case where a filename was changed, probably to better follow standards, we can manually match 
+# In the case where a filename was changed or a file was removed
 # The file to the page path
-# print("Looking up changes to datasets to fix for consistency")
-# page_path_old_links = pd.read_csv('old-file-lookup.csv')
-# old_links = page_path_old_links['old_links'].to_list()
-# old_links_page = page_path_old_links['page_path_2'].to_list()
+print("Looking up changes to datasets to fix for consistency")
+old_links = pd.read_csv(f'files/fy{fy}/old-file-lookup.csv')
 
+missing_pp2 = keen_pagepath.loc[keen_pagepath['page_path_2'].isna()]
+populated_pp2 = keen_pagepath.loc[~keen_pagepath['page_path_2'].isna()]
 
-# In[17]:
+missing_merge = pd.merge(missing_pp2,
+  old_links,
+  on='log.key',
+  how='left'
+  )
 
+keen_final_pagepath = pd.concat([
+  populated_pp2,
+  missing_merge],
+  ignore_index=True,
+  sort=False,
+  )
 
-def get_page(row):
-    if row['page_path_2'] == '':
-        if row['log.key'] in old_links:
-            pos = old_links.index(row['log.key'])
-            page_value = old_links_page[pos]
-            return page_value
-        else:
-            return ''
-    else:
-        return row['page_path_2']
+keen_final_pagepath.loc[keen_final_pagepath['page_path_2'].isna(),
+'page_path_2'] = keen_final_pagepath.loc[keen_final_pagepath['page_path_2'].isna(),
+'page_path_2_y']
 
-
-# In[18]:
-
-
-#keen_final_pagepath = keen_pagepath.apply(get_page,axis=1)
-
-
-# In[19]:
-
-
-#keen_pagepath.loc[:,'page_path_2'] = keen_final_pagepath
-
+keen_final_pagepath = keen_final_pagepath.drop(columns=['page_path_2_x','page_path_2_y'])
 
 print("Writing dataset downloads")
 
-keen_pagepath.to_csv(f'dataset_downloads_fy{fy}.csv',index=False)
+keen_final_pagepath.to_csv(f'files/fy{fy}/dataset_downloads.csv',index=False)
 
 
 # In[22]:
 
 print("Writing page links")
-final_dataset_pages.groupby('page_path_2').size().reset_index(name='counts').to_csv('dataset_page_links.csv',index=False)
+final_dataset_pages.groupby('page_path_2').size().reset_index(name='counts').to_csv(f'files/fy{fy}/dataset_page_links.csv',index=False)

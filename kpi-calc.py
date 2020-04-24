@@ -10,8 +10,6 @@ from pandas.io.json import json_normalize
 import json
 fy = 19
 
-
-
 print("Reading GA datasets for portal analytics")
 visits = pd.read_csv('http://seshat.datasd.org.s3.amazonaws.com/web_analytics/portal_pages_datasd.csv',parse_dates=['date'])
 
@@ -71,13 +69,13 @@ users_by_page = visits_pages.groupby(['page_path_2']).agg({'users': 'sum','pagev
 # In[9]:
 
 print("Calculating monthly users by page and writing to csv")
-visits_pages.groupby(['page_path_2','date_month']).agg({'users': 'sum','pageviews':'sum'}).reset_index().to_csv(f'portal-pages-months-fy{fy}.csv',index=False)
+visits_pages.groupby(['page_path_2','date_month']).agg({'users': 'sum','pageviews':'sum'}).reset_index().to_csv(f'files/fy{fy}/portal-pages-months.csv',index=False)
 
 
 # In[11]:
 
 print("Reading in Keen counts")
-keen = pd.read_csv(f'dataset_downloads_fy{fy}.csv',parse_dates=['date_full'])
+keen = pd.read_csv(f'files/fy{fy}/dataset_downloads.csv',parse_dates=['date_full'])
 keen['date_full'] = keen['date_full'].astype(str)
 
 
@@ -117,7 +115,7 @@ keen_page_groups = keen_visits_merge.loc[keen_visits_merge['page_path_2'] != '']
 keen_nopages = keen_visits_merge.loc[keen_visits_merge['page_path_2'].isnull()]
 
 print("Writing drupal activity per month")
-keen_nopages.loc[keen_nopages['log.key'].str.startswith('city_docs/')].groupby(['log.key','date_month']).aggregate({'result':'sum'}).reset_index().to_csv(f'keen-drupal-months-fy{fy}.csv',index=False)
+keen_nopages.loc[keen_nopages['log.key'].str.startswith('city_docs/')].groupby(['log.key','date_month']).aggregate({'result':'sum'}).reset_index().to_csv(f'files/fy{fy}/keen-drupal-months.csv',index=False)
 
 
 # In[17]:
@@ -254,7 +252,7 @@ page_downloads = keen_page_groups.groupby(['page_path_2','user_agent_type']).agg
 # In[29]:
 
 print("Writing Keen activity per page per ua")
-keen_page_groups.to_csv(f'keen-pages-ua-fy{fy}.csv',index=False)
+keen_page_groups.to_csv(f'files/fy{fy}/keen-pages-ua.csv',index=False)
 
 
 # In[30]:
@@ -273,7 +271,7 @@ keen_browser_users = pd.merge(keen_browser,users_by_page,how="left",left_on="pag
 # In[32]:
 
 print("Reading in dataset page links")
-pages_links = pd.read_csv('dataset_page_links.csv')
+pages_links = pd.read_csv(f'files/fy{fy}/dataset_page_links.csv')
 
 
 # In[33]:
@@ -305,7 +303,8 @@ keen_users_links = keen_users_links.assign(dl_user_weight=weighted_dl)
 # In[37]:
 
 
-keen_dl_users_page = keen_users_links.drop(columns=['pageviews','counts','counts_inverted'])
+#keen_dl_users_page = keen_users_links.drop(columns=['pageviews','counts','counts_inverted'])
+keen_dl_users_page = keen_users_links
 total_weighted_dl = keen_dl_users_page['dl_user_weight'].sum()
 print(f"Overall utilization is {total_weighted_dl}")
 
@@ -313,7 +312,7 @@ print(f"Overall utilization is {total_weighted_dl}")
 # In[38]:
 
 print("Writing utilization per page")
-keen_dl_users_page.to_csv(f'portal-utilization-fy{fy}.csv',index=False)
+keen_dl_users_page.to_csv(f'files/fy{fy}/portal-utilization.csv',index=False)
 
 
 # Utilization is the number of downloads per user, weighted according to the number of links on the page the user visited
