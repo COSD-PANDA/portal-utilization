@@ -14,6 +14,13 @@ To run these scripts, you will need [Google Analytics API Python libraries](http
 You may also need updated copies of [datasets.json](https://data.sandiego.gov/datasets.json) and [data.json](https://data.sandiego.gov/data.json). The data.json file is the official open data catalog file that conforms to the Project Open Data schema. The datasets.json file is a different json of all dataset pages that includes the page path. The combination of these allows us to link the S3 object link to the Google Analytics page paths. There is an additional old-file-lookup.csv that manually fixes some page paths and download links that changed during FY19.
 
 These are the steps to calculate the metric:
-1. Run the keen_analytics.py script. You will need to update the fiscal year on line 15. You will also need data.json, datasets.json, old-file-lookup.csv. One output of this is dataset_downloads_*year*.csv, which is the number of keen events (result column) per S3 object per day, with the corresponding GA page path. Another output is dataset_page_links.csv.
-2. Locate the portal_pages_*year*_datasd.csv. This is output from ETL that extracts Google Analytics for the data portal and main website. Once this is officially published as a dataset, this will be located in S3. Currently, the files are in the prod data folder of my local airflow repo.
-3. Run the kpi-calc script. You will need to update the fy on line 11. The overall utilization will print in the terminal, and the script will output portal-utilization.csv with the utilization per page. 
+1. Update the fiscal year variable in both scripts.
+2. Run the keen_analytics.py script. You will also need data.json and datasets.json. You will need to run this script twice. The first time, you'll be building the old-file-lookup.csv. Uncomment lines 209-213 and line 250 and comment out lines 222 - 249. The second time, you'll have the old-file-lookup created, so you can re-comment lines 209-213 and line 250 and uncomment lines 222-249. Is this a good way to do this? No. Make old-file-lookup by manually filling in the page_path_2. You can do this by referring to data.json and datasets.json for previous years. One output of this is dataset_downloads.csv, which is the number of keen events (result column) per S3 object per day, with the corresponding GA page path. Another output is dataset_page_links.csv.
+3. Run the kpi-calc script. The overall utilization will print in the terminal, and the script will output portal-utilization.csv with the utilization per page.
+
+Here are utilizations calculated so far
+| Fiscal year  |  Utilization |
+|--------------|--------------|
+| 18 | 1.97 |
+| 19 | 0.75 |
+| 20 | 0.83 |

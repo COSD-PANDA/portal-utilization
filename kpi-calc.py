@@ -8,7 +8,7 @@ import pandas as pd
 import numpy as np
 from pandas.io.json import json_normalize
 import json
-fy = 19
+fy = 20
 
 print("Reading GA datasets for portal analytics")
 visits = pd.read_csv('http://seshat.datasd.org.s3.amazonaws.com/web_analytics/portal_pages_datasd.csv',parse_dates=['date'])
