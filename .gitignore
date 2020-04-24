@@ -13,7 +13,10 @@
 *.csv
 *.json
 .DS_Store
-files/
+
+!old-file-lookup.csv
+!datasets.json
+!data.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

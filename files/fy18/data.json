@@ -1,0 +1,5061 @@
+{
+  "conformsTo": "https://project-open-data.cio.gov/v1.1/schema",
+  "@context": "https://project-open-data.cio.gov/v1.1/schema/catalog.jsonld",
+  "@id": "http://data.sandiego.gov/data.json",
+  "@type": "dcat:Catalog",
+  "describedBy": "https://project-open-data.cio.gov/v1.1/schema/catalog.json",
+  "dataset": [
+    {
+      "title": "Address Points to APN",
+      "identifier": "address_points_to_apn_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2016-05-09",
+      "modified": "2019-04-30",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "SanGIS"
+      },
+      "category": ["GIS"],
+      "contactPoint": {
+        "fn": "SanGIS",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Address points",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/addrapn/addrapn_datasd.zip",
+          "mediaType": "application/octet-stream",
+          "format": "shp"
+        },
+        
+        {
+          "title": "Address points",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/addrapn/addrapn_datasd.pbf",
+          "mediaType": "application/octet-stream",
+          "format": "pbf"
+        },
+        
+        {
+          "title": "Address points",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/addrapn/addrapn_datasd.topojson",
+          "mediaType": "application/octet-stream",
+          "format": "topojson"
+        },
+        
+        {
+          "title": "Address points",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/addrapn/addrapn_datasd.geojson",
+          "mediaType": "application/json",
+          "format": "geojson"
+        },
+        
+        {
+          "title": "Address points dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/addrapn/address_apn_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "Bike Master Plan",
+      "identifier": "bike_master_plan_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2017-06-30",
+      "modified": "2019-04-30",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Planning"
+      },
+      "category": ["GIS","Transportation","Energy & Environment"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Bike Master Plan route lines",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/bike_master_plan/bike_master_plan_datasd.zip",
+          "mediaType": "application/octet-stream",
+          "format": "shp"
+        },
+        
+        {
+          "title": "Bike Master Plan route lines",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/bike_master_plan/bike_master_plan_datasd.pbf",
+          "mediaType": "application/octet-stream",
+          "format": "pbf"
+        },
+        
+        {
+          "title": "Bike Master Plan route lines",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/bike_master_plan/bike_master_plan_datasd.topojson",
+          "mediaType": "application/octet-stream",
+          "format": "topojson"
+        },
+        
+        {
+          "title": "Bike Master Plan route lines",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/bike_master_plan/bike_master_plan_datasd.geojson",
+          "mediaType": "application/json",
+          "format": "geojson"
+        },
+        
+        {
+          "title": "Bike Master Plan route lines dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/bike_master_plan/bike_master_plan_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "Bike route lines",
+      "identifier": "bike_route_lines_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2016-05-09",
+      "modified": "2019-04-30",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Transportation & Storm Water"
+      },
+      "category": ["GIS","Transportation","Energy & Environment"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Existing bike route lines",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/bike_route/bike_routes_datasd.zip",
+          "mediaType": "application/octet-stream",
+          "format": "shp"
+        },
+        
+        {
+          "title": "Existing bike route lines",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/bike_route/bike_routes_datasd.pbf",
+          "mediaType": "application/octet-stream",
+          "format": "pbf"
+        },
+        
+        {
+          "title": "Existing bike route lines",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/bike_route/bike_routes_datasd.topojson",
+          "mediaType": "application/octet-stream",
+          "format": "topojson"
+        },
+        
+        {
+          "title": "Existing bike route lines",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/bike_route/bike_routes_datasd.geojson",
+          "mediaType": "application/json",
+          "format": "geojson"
+        },
+        
+        {
+          "title": "Existing bike route lines dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/bike_route/bike_routes_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "Accounts in the City's annual budget",
+      "identifier": "accounts_in_the_city's_annual_budget_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2017-06-30",
+      "modified": "2019-05-19",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Department of Finance"
+      },
+      "category": ["City Management"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Accounts hierarchy",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/budget/budget_reference_accounts_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Accounts hierarchy dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/budget/budget_reference_accounts_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "Departments in the City's annual budget",
+      "identifier": "departments_in_the_city's_annual_budget_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2017-06-30",
+      "modified": "2019-05-19",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Department of Finance"
+      },
+      "category": ["City Management"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Departments hierarchy",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/budget/budget_reference_depts_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Departments hierarchy dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/budget/budget_reference_depts_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "Funds in the City's annual budget",
+      "identifier": "funds_in_the_city's_annual_budget_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2017-06-30",
+      "modified": "2019-05-19",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Department of Finance"
+      },
+      "category": ["City Management"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Funds hierarchy",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/budget/budget_reference_funds_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Funds hierarchy dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/budget/budget_reference_funds_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "Projects in the City's annual budget",
+      "identifier": "projects_in_the_city's_annual_budget_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2017-06-30",
+      "modified": "2019-05-19",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Department of Finance"
+      },
+      "category": ["City Management"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Project hierarchy",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/budget/budget_reference_projects_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Project hierarchy dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/budget/budget_reference_projects_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "Business improvement districts",
+      "identifier": "business_improvement_districts_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2016-05-09",
+      "modified": "2019-04-30",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Economic Development"
+      },
+      "category": ["GIS","City Management","Economy & Community"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Business improvement district",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/bus_improvement_districts/bids_datasd.zip",
+          "mediaType": "application/octet-stream",
+          "format": "shp"
+        },
+        
+        {
+          "title": "Business improvement districts",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/bus_improvement_districts/bids_datasd.pbf",
+          "mediaType": "application/octet-stream",
+          "format": "pbf"
+        },
+        
+        {
+          "title": "Business improvement districts",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/bus_improvement_districts/bids_datasd.topojson",
+          "mediaType": "application/octet-stream",
+          "format": "topojson"
+        },
+        
+        {
+          "title": "Business improvement districts",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/bus_improvement_districts/bids_datasd.geojson",
+          "mediaType": "application/json",
+          "format": "geojson"
+        },
+        
+        {
+          "title": "Business improvement districts dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/bus_improvement_districts/bids_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "Business Tax Certificates",
+      "identifier": "business_tax_certificates_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2016-05-09",
+      "modified": "2019-05-29",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "City Treasurer"
+      },
+      "category": ["Economy & Community"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Active certificates issued since 2018",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/ttcs/sd_businesses_active_since08_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Active certificates issued before 2018",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/ttcs/sd_businesses_active_pre08_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Inactive certificates issued since 2017",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/ttcs/sd_businesses_2017to2019_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Inactive certificates issued 2014 - 2016",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/ttcs/sd_businesses_2014to2016_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Inactive certificates issued 2011 - 2013",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/ttcs/sd_businesses_2011to2013_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Inactive certificates issued 2008 - 2010",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/ttcs/sd_businesses_2008to2010_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Inactive certificates issued 2005 - 2007",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/ttcs/sd_businesses_2005to2007_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Inactive certificates issued 2002 - 2004",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/ttcs/sd_businesses_2002to2004_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Inactive certificates issued 1999 - 2001",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/ttcs/sd_businesses_1999to2001_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Inactive certificates issued 1996 - 1998",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/ttcs/sd_businesses_1996to1998_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Inactive certificates issued 1993 - 1995",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/ttcs/sd_businesses_1993to1995_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Inactive certificates issued 1990 - 1992",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/ttcs/sd_businesses_1990to1992_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Data dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/ttcs/sd_businesses_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "Candidates and Ballot Measures Receiving Financial Support",
+      "identifier": "candidates_and_ballot_measures_receiving_financial_support_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2017-06-14",
+      "modified": "2017-06-14",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "City Clerk"
+      },
+      "category": ["Economy & Community"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Candidates and Ballot Measures",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/campaign_fin/financial_support_recipients_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Candidates and Ballot Measures Dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/campaign_fin/financial_support_recipients_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "Capital Improvement Projects (CIP) Actuals by fiscal year",
+      "identifier": "capital_improvement_projects_(cip)_actuals_by_fiscal_year_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2018-10-15",
+      "modified": "2019-03-10",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Department of Finance"
+      },
+      "category": ["City Management"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "FY17 CIP Actuals",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/budget/actuals_capital_FY17_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "FY16 CIP Actuals",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/budget/actuals_capital_FY16_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "FY15 CIP Actuals",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/budget/actuals_capital_FY15_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "FY14 CIP Actuals",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/budget/actuals_capital_FY14_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "FY13 CIP Actuals",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/budget/actuals_capital_FY13_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "FY12 CIP Actuals",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/budget/actuals_capital_FY12_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "FY11 CIP Actuals",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/budget/actuals_capital_FY11_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "CIP Actuals dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/budget/capital_actuals_fy_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "Capital Improvement Projects (CIP) Actuals project to date",
+      "identifier": "capital_improvement_projects_(cip)_actuals_project_to_date_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2018-10-15",
+      "modified": "2019-05-19",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Department of Finance"
+      },
+      "category": ["City Management"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "FY17 project-to-date CIP Actuals",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/budget/actuals_capital_ptd_FY17_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "FY16 p-t-d CIP Actuals",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/budget/actuals_capital_ptd_FY16_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "FY15 p-t-d CIP Actuals",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/budget/actuals_capital_ptd_FY15_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "FY14 p-t-d CIP Actuals",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/budget/actuals_capital_ptd_FY14_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "FY13 p-t-d CIP Actuals",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/budget/actuals_capital_ptd_FY13_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "FY12 p-t-d CIP Actuals",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/budget/actuals_capital_ptd_FY12_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "FY11 p-t-d CIP Actuals",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/budget/actuals_capital_ptd_FY11_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Project-to-date CIP actuals dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/budget/capital_actuals_ptd_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "Capital Improvement Projects (CIP) Budget by fiscal year",
+      "identifier": "capital_improvement_projects_(cip)_budget_by_fiscal_year_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2017-06-30",
+      "modified": "2018-12-05",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Department of Finance"
+      },
+      "category": ["City Management"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "FY18 Adopted CIP Budget",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/budget/capital_budget_FY18_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "FY17 Adopted CIP Budget",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/budget/capital_budget_FY17_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "FY16 Adopted CIP Budget",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/budget/capital_budget_FY16_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "FY15 Adopted CIP Budget",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/budget/capital_budget_FY15_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "FY14 Adopted CIP Budget",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/budget/capital_budget_FY14_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "FY13 Adopted CIP Budget",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/budget/capital_budget_FY13_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "FY12 Adopted CIP Budget",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/budget/capital_budget_FY12_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "FY11 Adopted CIP Budget",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/budget/capital_budget_FY11_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "CIP Budget dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/budget/capital_budget_fy_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "Capital Improvement Projects (CIP) Budget project to date",
+      "identifier": "capital_improvement_projects_(cip)_budget_project_to_date_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2017-06-30",
+      "modified": "2019-05-19",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Department of Finance"
+      },
+      "category": ["City Management"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "FY19 project-to-date CIP Budget",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/budget/capital_budget_ptd_FY19_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "FY18 project-to-date CIP Budget",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/budget/capital_budget_ptd_FY18_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "FY17 project-to-date CIP Budget",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/budget/capital_budget_ptd_FY17_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "FY16 project-to-date CIP Budget",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/budget/capital_budget_ptd_FY16_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "FY15 project-to-date CIP Budget",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/budget/capital_budget_ptd_FY15_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "FY14 project-to-date CIP Budget",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/budget/capital_budget_ptd_FY14_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "FY13 project-to-date CIP Budget",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/budget/capital_budget_ptd_FY13_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "FY12 project-to-date CIP Budget",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/budget/capital_budget_ptd_FY12_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "FY11 project-to-date CIP Budget",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/budget/capital_budget_ptd_FY11_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Project-to-date CIP Budget dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/budget/capital_budget_ptd_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "City Council districts",
+      "identifier": "city_council_districts_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2016-05-09",
+      "modified": "2019-04-30",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "IT"
+      },
+      "category": ["GIS","City Management"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "City Council districts",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/council/council_districts_datasd.zip",
+          "mediaType": "application/octet-stream",
+          "format": "shp"
+        },
+        
+        {
+          "title": "City Council districts",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/council/council_districts_datasd.pbf",
+          "mediaType": "application/octet-stream",
+          "format": "pbf"
+        },
+        
+        {
+          "title": "City Council districts",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/council/council_districts_datasd.topojson",
+          "mediaType": "application/octet-stream",
+          "format": "topojson"
+        },
+        
+        {
+          "title": "City Council districts",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/council/council_districts_datasd.geojson",
+          "mediaType": "application/json",
+          "format": "geojson"
+        },
+        
+        {
+          "title": "City Council districts dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/council/council_districts_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "City Owned Properties - Details",
+      "identifier": "city_owned_properties_-_details_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2016-06-01",
+      "modified": "2019-04-11",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Real Estate Assets"
+      },
+      "category": ["City Infrastructure"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "City Owned Properties - Details",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/read/city_property_details_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "City Owned Properties - Details Dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/read/city_property_details_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "City Owned Properties - Leases",
+      "identifier": "city_owned_properties_-_leases_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2016-06-01",
+      "modified": "2019-04-11",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Real Estate Assets"
+      },
+      "category": ["City Infrastructure"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "City Owned Properties - Leases",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/read/city_property_leases_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "City Owned Properties - Leases Dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/read/city_property_leases_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "City Owned Properties - Parcels",
+      "identifier": "city_owned_properties_-_parcels_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2016-06-01",
+      "modified": "2019-04-11",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Real Estate Assets"
+      },
+      "category": ["City Infrastructure"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "City Owned Properties - Parcels",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/read/city_property_parcels_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "City Owned Properties - Parcels Dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/read/city_property_parcels_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "Code Enforcement Violations",
+      "identifier": "code_enforcement_violations_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2016-06-21",
+      "modified": "2019-03-18",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Development Services"
+      },
+      "category": "Economy & Community",
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Code Enforcement Cases (past 6 months)",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/dsd/code_enf_past_6_mo_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Code Enforcement Cases (past 3 years)",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/dsd/code_enf_past_3_yr_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Code Enforcement Dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/dsd/code_enforcement_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Complaint Type Codes",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/dsd/complaint_types_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Code Enforcement Remedies",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/dsd/code_enf_remedies_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "Community Development Block Grant (CDBG) areas",
+      "identifier": "community_development_block_grant_(cdbg)_areas_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2017-06-30",
+      "modified": "2019-04-30",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Economic Development"
+      },
+      "category": ["GIS","Economy & Community"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Census tracts eligible for CDBG",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/block_grants/block_grants_datasd.zip",
+          "mediaType": "application/octet-stream",
+          "format": "shp"
+        },
+        
+        {
+          "title": "Census tracts eligible for CDBG",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/block_grants/block_grants_datasd.pbf",
+          "mediaType": "application/octet-stream",
+          "format": "pbf"
+        },
+        
+        {
+          "title": "Census tracts eligible for CDBG",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/block_grants/block_grants_datasd.topojson",
+          "mediaType": "application/octet-stream",
+          "format": "topojson"
+        },
+        
+        {
+          "title": "Census tracts eligible for CDBG",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/block_grants/block_grants_datasd.geojson",
+          "mediaType": "application/json",
+          "format": "geojson"
+        },
+        
+        {
+          "title": "Census tracts eligible for CDBG dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/block_grants/block_grants_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "Community planning districts",
+      "identifier": "community_planning_districts_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2016-05-09",
+      "modified": "2019-04-30",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Planning"
+      },
+      "category": ["GIS","City Management","Economy & Community"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Community planning districts",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/cmty_plan/cmty_plan_datasd.zip",
+          "mediaType": "application/octet-stream",
+          "format": "shp"
+        },
+        
+        {
+          "title": "Community planning districts",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/cmty_plan/cmty_plan_datasd.pbf",
+          "mediaType": "application/octet-stream",
+          "format": "pbf"
+        },
+        
+        {
+          "title": "Community planning districts",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/cmty_plan/cmty_plan_datasd.topojson",
+          "mediaType": "application/octet-stream",
+          "format": "topojson"
+        },
+        
+        {
+          "title": "Community planning districts",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/cmty_plan/cmty_plan_datasd.geojson",
+          "mediaType": "application/json",
+          "format": "geojson"
+        },
+        
+        {
+          "title": "Community planning districts dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/cmty_plan/cmty_plan_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "Complaint Type Codes",
+      "identifier": "complaint_type_codes_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2016-05-03",
+      "modified": "2016-07-05",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Development Services"
+      },
+      "category": "Economy & Community",
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Complaint Type Codes",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/dsd/complaint_types_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "Data Inventory",
+      "identifier": "data_inventory_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2015-05-23",
+      "modified": "2019-02-01",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Performance & Analytics"
+      },
+      "category": ["City Management"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "DataSD.org Data Inventory",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/inventory/inventory_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "Drinking Water Sample Sites",
+      "identifier": "drinking_water_sample_sites_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2016-05-15",
+      "modified": "2016-07-05",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Public Utilities"
+      },
+      "category": ["Energy & Environment","City Infrastructure"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Sample Sites",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/water_testing/sample_sites_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Sample Sites Dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/water_testing/sample_sites_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "Enterprise System Information",
+      "identifier": "enterprise_system_information_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2016-08-01",
+      "modified": "2016-08-01",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Information Technology"
+      },
+      "category": ["City Management"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "SB 272 Catalog",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sb272_catalog/it_sb272_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "Facility Condition Index ratings for City buildings",
+      "identifier": "facility_condition_index_ratings_for_city_buildings_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2017-06-30",
+      "modified": "2017-07-17",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Public Works"
+      },
+      "category": ["City Management"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "FCI ratings",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/facilities/facilities_assessment_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "FCI ratings dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/facilities/facilities_assessment_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "Financial Support for Candidates and Ballot Measures up for Election",
+      "identifier": "financial_support_for_candidates_and_ballot_measures_up_for_election_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2016-05-05",
+      "modified": "2019-05-29",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "City Clerk"
+      },
+      "category": ["Economy & Community"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Financial Transactions Dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/campaign_fin/financial_support_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Financial Transactions Reported by Election Committees year-to-date",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/campaign_fin/financial_support_2019_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Financial Transactions Reported by Election Committees (2018)",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/campaign_fin/financial_support_2018_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Financial Transactions Reported by Election Committees (2017)",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/campaign_fin/financial_support_2017_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Financial Transactions Reported by Election Committees (2016)",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/campaign_fin/financial_support_2016_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Financial Transactions Reported by Election Committees (2015)",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/campaign_fin/financial_support_2015_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Financial Transactions Reported by Election Committees (2014)",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/campaign_fin/financial_support_2014_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Financial Transactions Reported by Election Committees (2013)",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/campaign_fin/financial_support_2013_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Financial Transactions Reported by Election Committees (2012)",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/campaign_fin/financial_support_2012_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Financial Transactions Reported by Election Committees (2011)",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/campaign_fin/financial_support_2011_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Financial Transactions Reported by Election Committees (2010)",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/campaign_fin/financial_support_2010_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Financial Transactions Reported by Election Committees (2009)",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/campaign_fin/financial_support_2009_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Financial Transactions Reported by Election Committees (2008)",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/campaign_fin/financial_support_2008_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Financial Transactions Reported by Election Committees (2007)",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/campaign_fin/financial_support_2007_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "Fire battalion districts",
+      "identifier": "fire_battalion_districts_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2017-06-30",
+      "modified": "2019-04-30",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Fire-Rescue"
+      },
+      "category": ["GIS","Economy & Community"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Fire battalion districts",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/fire_battalion/fire_battalion_districts_datasd.zip",
+          "mediaType": "application/octet-stream",
+          "format": "shp"
+        },
+        
+        {
+          "title": "Fire battalion districts",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/fire_battalion/fire_battalion_districts_datasd.pbf",
+          "mediaType": "application/octet-stream",
+          "format": "pbf"
+        },
+        
+        {
+          "title": "Fire battalion districts",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/fire_battalion/fire_battalion_districts_datasd.topojson",
+          "mediaType": "application/octet-stream",
+          "format": "topojson"
+        },
+        
+        {
+          "title": "Fire battalion districts",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/fire_battalion/fire_battalion_districts_datasd.geojson",
+          "mediaType": "application/json",
+          "format": "geojson"
+        },
+        
+        {
+          "title": "Fire battalion districts dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/fire_battalion/fire_battalion_districts_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "Fire Incident Problem Counts",
+      "identifier": "fire_incident_problem_counts_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2019-01-09",
+      "modified": "2019-01-09",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Fire-Rescue"
+      },
+      "category": ["Public Safety"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Fire incident problem counts 2016 through year-to-date",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/fd_cad/fd_problem_nature_agg_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Fire incidents problem counts dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/fd_cad/fire_problem_nature_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "Fire Incidents",
+      "identifier": "fire_incidents_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2016-05-26",
+      "modified": "2019-05-29",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Fire-Rescue"
+      },
+      "category": ["Public Safety"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Fire Incidents year-to-date",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/fd_cad/fd_incidents_2019_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Fire Incidents 2018",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/fd_cad/fd_incidents_2018_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Fire Incidents 2017",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/fd_cad/fd_incidents_2017_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Fire Incidents 2016",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/fd_cad/fd_incidents_2016_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Fire Incidents 2015",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/fd_cad/fd_incidents_2015_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Fire Incidents 2014",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/fd_cad/fd_incidents_2014_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Fire Incidents 2013",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/fd_cad/fd_incidents_2013_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Fire Incidents 2012",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/fd_cad/fd_incidents_2012_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Fire Incidents 2011",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/fd_cad/fd_incidents_2011_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Fire Incidents 2010",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/fd_cad/fd_incidents_2010_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Fire Incidents 2009",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/fd_cad/fd_incidents_2009_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Fire Incidents 2008",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/fd_cad/fd_incidents_2008_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Fire Incidents 2007",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/fd_cad/fd_incidents_2007_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Fire Incidents Dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/fd_cad/fd_incidents_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "Fire Stations",
+      "identifier": "fire_stations_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2016-05-09",
+      "modified": "2019-04-30",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Fire-Rescue"
+      },
+      "category": ["GIS","Public Safety"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Fire station points",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/fire_stations/fire_stations_datasd.zip",
+          "mediaType": "application/octet-stream",
+          "format": "shp"
+        },
+        
+        {
+          "title": "Fire station points",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/fire_stations/fire_stations_datasd.pbf",
+          "mediaType": "application/octet-stream",
+          "format": "pbf"
+        },
+        
+        {
+          "title": "Fire station points",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/fire_stations/fire_stations_datasd.topojson",
+          "mediaType": "application/octet-stream",
+          "format": "topojson"
+        },
+        
+        {
+          "title": "Fire station points",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/fire_stations/fire_stations_datasd.geojson",
+          "mediaType": "application/json",
+          "format": "geojson"
+        },
+        
+        {
+          "title": "Fire station points dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/fire_stations/fire_stations_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "General Plan Land Use",
+      "identifier": "general_plan_land_use_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2016-05-09",
+      "modified": "2019-04-30",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Planning"
+      },
+      "category": ["GIS","Economy & Community"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "General Plan polygons",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/gp_land_use/gp_land_use_datasd.zip",
+          "mediaType": "application/octet-stream",
+          "format": "shp"
+        },
+        
+        {
+          "title": "General Plan polygons",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/gp_land_use/gp_land_use_datasd.pbf",
+          "mediaType": "application/octet-stream",
+          "format": "pbf"
+        },
+        
+        {
+          "title": "General Plan polygons",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/gp_land_use/gp_land_use_datasd.topojson",
+          "mediaType": "application/octet-stream",
+          "format": "topojson"
+        },
+        
+        {
+          "title": "General Plan polygons",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/gp_land_use/gp_land_use_datasd.geojson",
+          "mediaType": "application/json",
+          "format": "geojson"
+        },
+        
+        {
+          "title": "General Plan polygons dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/gp_land_use/gp_land_use_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "Reports of non-emergency problems submitted by users of Get It Done",
+      "identifier": "reports_of_non-emergency_problems_submitted_by_users_of_get_it_done_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2016-05-26",
+      "modified": "2019-05-30",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Performance & Analytics"
+      },
+      "category": "City Management",
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Get It Done Requests year-to-date",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/get_it_done_311/get_it_done_2019_requests_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Get It Done Requests 2018",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/get_it_done_311/get_it_done_2018_requests_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Get It Done Requests 2017",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/get_it_done_311/get_it_done_2017_requests_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Get It Done Requests 2016",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/get_it_done_311/get_it_done_2016_requests_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Get It Done Requests Data Dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/get_it_done_311/get_it_done_requests_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Get It Done Requests JSON API",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://san-diego.spotreporters.com/open311/v2/requests.json",
+          "mediaType": "application/json",
+          "format": "json"
+        },
+        
+        {
+          "title": "Get It Done Services",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/get_it_done_311/get_it_done_311_services_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Get It Done Services JSON API",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://san-diego.spotreporters.com/open311/v2/services.json",
+          "mediaType": "application/json",
+          "format": "json"
+        }
+      ]
+    },
+    {
+      "title": "72-hour Parking Violation Notifications",
+      "identifier": "72-hour_parking_violation_notifications_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2017-06-13",
+      "modified": "2019-05-30",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Performance & Analytics"
+      },
+      "category": "City Management",
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "72-hour Parking Violation Notifications",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/get_it_done_311/get_it_done_72_hour_violation_requests_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "72-hour Parking Violation Notifications Data Dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/get_it_done_311/get_it_done_311_requests_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "Graffiti Removal Requests",
+      "identifier": "graffiti_removal_requests_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2017-06-13",
+      "modified": "2019-05-30",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Performance & Analytics"
+      },
+      "category": "City Management",
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Graffiti Removal Requests",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/get_it_done_311/get_it_done_graffiti_removal_requests_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Graffiti Removal Requests Data Dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/get_it_done_311/get_it_done_311_requests_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "Illegal Dumping Notifications",
+      "identifier": "illegal_dumping_notifications_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2017-06-13",
+      "modified": "2019-05-30",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Performance & Analytics"
+      },
+      "category": "City Management",
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Illegal Dumping Notifications",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/get_it_done_311/get_it_done_illegal_dumping_requests_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Illegal Dumping Notifications Data Dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/get_it_done_311/get_it_done_311_requests_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "Pothole Repair Requests",
+      "identifier": "pothole_repair_requests_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2017-06-13",
+      "modified": "2019-05-30",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Performance & Analytics"
+      },
+      "category": "City Management",
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Pothole Repair Requests",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/get_it_done_311/get_it_done_pothole_requests_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Pothole Repair Requests Data Dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/get_it_done_311/get_it_done_311_requests_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "Historical districts",
+      "identifier": "historical_districts_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2017-06-30",
+      "modified": "2019-04-30",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Development Services"
+      },
+      "category": ["GIS","Economy & Community"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Historical districts",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/historic_districts/historic_districts_datasd.zip",
+          "mediaType": "application/octet-stream",
+          "format": "shp"
+        },
+        
+        {
+          "title": "Historical districts",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/historic_districts/historic_districts_datasd.pbf",
+          "mediaType": "application/octet-stream",
+          "format": "pbf"
+        },
+        
+        {
+          "title": "Historical districts",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/historic_districts/historic_districts_datasd.topojson",
+          "mediaType": "application/octet-stream",
+          "format": "topojson"
+        },
+        
+        {
+          "title": "Historical districts",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/historic_districts/historic_districts_datasd.geojson",
+          "mediaType": "application/json",
+          "format": "geojson"
+        },
+        
+        {
+          "title": "Historical districts dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/historic_districts/historic_districts_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "Joint use parks",
+      "identifier": "joint_use_parks_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2017-06-30",
+      "modified": "2019-04-30",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Park & Recreation"
+      },
+      "category": ["GIS","Culture & Recreation","City Infrastructure"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Joint use parks",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/joint_use/joint_use_datasd.zip",
+          "mediaType": "application/octet-stream",
+          "format": "shp"
+        },
+        
+        {
+          "title": "Joint use parks",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/joint_use/joint_use_datasd.pbf",
+          "mediaType": "application/octet-stream",
+          "format": "pbf"
+        },
+        
+        {
+          "title": "Joint use parks",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/joint_use/joint_use_datasd.topojson",
+          "mediaType": "application/octet-stream",
+          "format": "topojson"
+        },
+        
+        {
+          "title": "Joint use parks",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/joint_use/joint_use_datasd.geojson",
+          "mediaType": "application/json",
+          "format": "geojson"
+        },
+        
+        {
+          "title": "Joint use parks dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/joint_use/joint_use_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "Library Locations",
+      "identifier": "library_locations_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2016-05-09",
+      "modified": "2019-04-30",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Library"
+      },
+      "category": ["GIS","Culture & Recreation","City Infrastructure"],
+      "contactPoint": {
+        "fn": "County of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Library points",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/library/libraries_datasd.zip",
+          "mediaType": "application/octet-stream",
+          "format": "shp"
+        },
+        
+        {
+          "title": "Library points",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/library/libraries_datasd.pbf",
+          "mediaType": "application/octet-stream",
+          "format": "pbf"
+        },
+        
+        {
+          "title": "Library points",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/library/libraries_datasd.topojson",
+          "mediaType": "application/octet-stream",
+          "format": "topojson"
+        },
+        
+        {
+          "title": "Library points",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/library/libraries_datasd.geojson",
+          "mediaType": "application/json",
+          "format": "geojson"
+        },
+        
+        {
+          "title": "Library points dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/library/libraries_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "Lifeguard station point locations",
+      "identifier": "lifeguard_station_point_locations_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2017-06-30",
+      "modified": "2019-04-30",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Fire-Rescue"
+      },
+      "category": ["GIS","Public Safety"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Lifeguard station points",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/lifeguard_stations/lifeguard_stations_datasd.zip",
+          "mediaType": "application/octet-stream",
+          "format": "shp"
+        },
+        
+        {
+          "title": "Lifeguard station points",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/lifeguard_stations/lifeguard_stations_datasd.pbf",
+          "mediaType": "application/octet-stream",
+          "format": "pbf"
+        },
+        
+        {
+          "title": "Lifeguard station points",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/lifeguard_stations/lifeguard_stations_datasd.topojson",
+          "mediaType": "application/octet-stream",
+          "format": "topojson"
+        },
+        
+        {
+          "title": "Lifeguard station points",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/lifeguard_stations/lifeguard_stations_datasd.geojson",
+          "mediaType": "application/json",
+          "format": "geojson"
+        },
+        
+        {
+          "title": "Lifeguard station points dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/lifeguard_stations/lifeguard_stations_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "Maintenance assessment districts",
+      "identifier": "maintenance_assessment_districts_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2017-06-30",
+      "modified": "2019-04-30",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Park & Recreation"
+      },
+      "category": ["GIS","Economy & Community"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Maintenance assessment districts",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/maint_assess/maintenance_assessment_districts_datasd.zip",
+          "mediaType": "application/octet-stream",
+          "format": "shp"
+        },
+        
+        {
+          "title": "Maintenance assessment districts",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/maint_assess/maintenance_assessment_districts_datasd.pbf",
+          "mediaType": "application/octet-stream",
+          "format": "pbf"
+        },
+        
+        {
+          "title": "Maintenance assessment districts",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/maint_assess/maintenance_assessment_districts_datasd.topojson",
+          "mediaType": "application/octet-stream",
+          "format": "topojson"
+        },
+        
+        {
+          "title": "Maintenance assessment districts",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/maint_assess/maintenance_assessment_districts_datasd.geojson",
+          "mediaType": "application/json",
+          "format": "geojson"
+        },
+        
+        {
+          "title": "Maintenance assessment districts dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/maint_assess/maintenance_assessment_districts_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "Multi-Habitat Planning Areas",
+      "identifier": "multi-habitat_planning_areas_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2017-06-30",
+      "modified": "2019-04-30",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Planning"
+      },
+      "category": ["GIS","Energy & Environment"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "MHPA",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/mhpa/mhpa_datasd.zip",
+          "mediaType": "application/octet-stream",
+          "format": "shp"
+        },
+        
+        {
+          "title": "MHPA",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/mhpa/mhpa_datasd.pbf",
+          "mediaType": "application/octet-stream",
+          "format": "pbf"
+        },
+        
+        {
+          "title": "MHPA",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/mhpa/mhpa_datasd.topojson",
+          "mediaType": "application/octet-stream",
+          "format": "topojson"
+        },
+        
+        {
+          "title": "MHPA",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/mhpa/mhpa_datasd.geojson",
+          "mediaType": "application/json",
+          "format": "geojson"
+        },
+        
+        {
+          "title": "MHPA dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/mhpa/mhpa_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "Monitoring of Indicator Bacteria in Drinking Water",
+      "identifier": "monitoring_of_indicator_bacteria_in_drinking_water_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2016-05-11",
+      "modified": "2019-05-29",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Public Utilities"
+      },
+      "category": ["Energy & Environment","City Infrastructure"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Latest Drinking Water Tests (Bacteria)",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/water_testing/latest_indicator_bac_tests_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "All Drinking Water Tests (Bacteria)",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/water_testing/indicator_bacteria_tests_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Drinking Water Tests (Bacteria) Dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/water_testing/indicator_bacteria_tests_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "Monitoring of Select Chemical Parameters in Drinking Water",
+      "identifier": "monitoring_of_select_chemical_parameters_in_drinking_water_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2016-05-11",
+      "modified": "2017-02-17",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Public Utilities"
+      },
+      "category": ["Energy & Environment","City Infrastructure"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Drinking Water Tests (Chemical)",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/water_testing/parameter_tests_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Drinking Water Tests (Chemical) Dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/water_testing/parameter_tests_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Chemical Parameters Definition",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/water_testing/parameter_defs_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "Operating Actuals",
+      "identifier": "operating_actuals_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2018-10-15",
+      "modified": "2019-05-19",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Department of Finance"
+      },
+      "category": ["City Management"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "FY17 Operating Actuals",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/budget/actuals_operating_FY17_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "FY16 Operating Actuals",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/budget/actuals_operating_FY16_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "FY15 Operating Actuals",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/budget/actuals_operating_FY15_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "FY14 Operating Actuals",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/budget/actuals_operating_FY14_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "FY13 Operating Actuals",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/budget/actuals_operating_FY13_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "FY12 Operating Actuals",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/budget/actuals_operating_FY12_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "FY11 Operating Actuals",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/budget/actuals_operating_FY11_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Operating actuals dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/budget/operating_actuals_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "Operating budgets",
+      "identifier": "operating_budgets_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2017-06-30",
+      "modified": "2019-05-19",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Department of Finance"
+      },
+      "category": ["City Management"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "FY19 Operating Budget",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/budget/operating_budget_FY19_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "FY18 Operating Budget",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/budget/operating_budget_FY18_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "FY18 Operating Budget",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/budget/operating_budget_FY18_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "FY17 Operating Budget",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/budget/operating_budget_FY17_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "FY16 Operating Budget",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/budget/operating_budget_FY16_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "FY15 Operating Budget",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/budget/operating_budget_FY15_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "FY14 Operating Budget",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/budget/operating_budget_FY14_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "FY13 Operating Budget",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/budget/operating_budget_FY13_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "FY12 Operating Budget",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/budget/operating_budget_FY12_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "FY11 Operating Budget",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/budget/operating_budget_FY11_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Operating Budget dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/budget/operating_budget_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "Park Locations",
+      "identifier": "park_locations_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2016-06-17",
+      "modified": "2019-04-30",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Park & Recreation"
+      },
+      "category": ["GIS","Culture & Recreation","City Infrastructure"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Park points",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/parks/parks_datasd.zip",
+          "mediaType": "application/octet-stream",
+          "format": "shp"
+        },
+        
+        {
+          "title": "Park points",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/parks/parks_datasd.pbf",
+          "mediaType": "application/octet-stream",
+          "format": "pbf"
+        },
+        
+        {
+          "title": "Park points",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/parks/parks_datasd.topojson",
+          "mediaType": "application/octet-stream",
+          "format": "topojson"
+        },
+        
+        {
+          "title": "Park points",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/parks/parks_datasd.geojson",
+          "mediaType": "application/json",
+          "format": "geojson"
+        },
+        
+        {
+          "title": "Park points dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/parks/parks_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "Parking Meters Locations",
+      "identifier": "parking_meters_locations_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2016-05-18",
+      "modified": "2016-07-01",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "City Treasurer"
+      },
+      "category": ["City Infrastructure","Transportation"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Parking Meters Locations",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/parking_meters/treas_parking_meters_loc_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Parking Meters Locations Dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/parking_meters/meters_locations_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "Parking Meters Transactions",
+      "identifier": "parking_meters_transactions_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2016-05-02",
+      "modified": "2019-05-29",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "City Treasurer"
+      },
+      "category": ["City Infrastructure","Transportation"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Parking meters transactions - Year-to-date (raw)",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/parking_meters/treas_parking_payments_2019_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Parking meters transactions - Year-to-date (aggregated by day)",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/parking_meters/treas_meters_2019_pole_by_mo_day_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Parking meters transactions - Year-to-date (aggregated by month)",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/parking_meters/treas_meters_2019_pole_by_month_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Parking meters transactions - 2018 (raw)",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/parking_meters/treas_parking_payments_2018_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Parking meters transactions - 2018 (aggregated by day)",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/parking_meters/treas_meters_2018_pole_by_mo_day_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Parking meters transactions - 2018 (aggregated by month)",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/parking_meters/treas_meters_2018_pole_by_month_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Parking meters transactions - 2017 (raw)",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/parking_meters/treas_parking_payments_2017_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Parking meters transactions - 2017 (aggregated by day)",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/parking_meters/treas_meters_2017_pole_by_mo_day_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Parking meters transactions - 2017 (aggregated by month)",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/parking_meters/treas_meters_2017_pole_by_month_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Parking meters transactions - 2016 (raw)",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/parking_meters/treas_parking_payments_2016_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Parking meters transactions - 2016 (aggregated by day)",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/parking_meters/treas_meters_2016_pole_by_mo_day_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Parking meters transactions - 2016 (aggregated by month)",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/parking_meters/treas_meters_2016_pole_by_month_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Parking meter transactions - 2015 (raw)",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/parking_meters/treas_parking_payments_2015_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Parking meters transactions - 2015 (aggregated by day)",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/parking_meters/treas_meters_2015_pole_by_mo_day_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Parking meters transactions - 2015 (aggregated by month)",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/parking_meters/treas_meters_2015_pole_by_month_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Parking Meter Transactions Data Dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/parking_meters/meters_transactions_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "Police divisions",
+      "identifier": "police_divisions_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2017-06-30",
+      "modified": "2019-04-30",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Police"
+      },
+      "category": ["GIS","Public Safety"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Police divisions",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/pd/pd_divisions_datasd.zip",
+          "mediaType": "application/octet-stream",
+          "format": "shp"
+        },
+        
+        {
+          "title": "Police divisions",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/pd/pd_divisions_datasd.pbf",
+          "mediaType": "application/octet-stream",
+          "format": "pbf"
+        },
+        
+        {
+          "title": "Police divisions",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/pd/pd_divisions_datasd.topojson",
+          "mediaType": "application/octet-stream",
+          "format": "topojson"
+        },
+        
+        {
+          "title": "Police divisions",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/pd/pd_divisions_datasd.geojson",
+          "mediaType": "application/json",
+          "format": "geojson"
+        },
+        
+        {
+          "title": "Police divisions dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/pd/pd_divisions_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "Police neighborhoods",
+      "identifier": "police_neighborhoods_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2017-06-30",
+      "modified": "2019-04-30",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Police"
+      },
+      "category": ["GIS","Public Safety"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Police neighborhoods",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/pd/pd_neighborhoods_datasd.zip",
+          "mediaType": "application/octet-stream",
+          "format": "shp"
+        },
+        
+        {
+          "title": "Police neighborhoods",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/pd/pd_neighborhoods_datasd.pbf",
+          "mediaType": "application/octet-stream",
+          "format": "pbf"
+        },
+        
+        {
+          "title": "Police neighborhoods",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/pd/pd_neighborhoods_datasd.topojson",
+          "mediaType": "application/octet-stream",
+          "format": "topojson"
+        },
+        
+        {
+          "title": "Police neighborhoods",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/pd/pd_neighborhoods_datasd.geojson",
+          "mediaType": "application/json",
+          "format": "geojson"
+        },
+        
+        {
+          "title": "Police neighborhoods dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/pd/pd_neighborhoods_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "Permits Applied",
+      "identifier": "permits_applied_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2017-01-08",
+      "modified": "2019-03-18",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Development Services"
+      },
+      "category": ["Economy & Community"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Permits Applied (year-to-date)",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/dsd/apps_received_ytd_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Permits Activity Dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/dsd/permits_activity_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "Permits Completed",
+      "identifier": "permits_completed_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2016-06-21",
+      "modified": "2019-03-18",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Development Services"
+      },
+      "category": ["Economy & Community"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Permits Completed (year-to-date)",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/dsd/permits_completed_ytd_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Permits Completed (2016)",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/dsd/permits_completed_2016_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Permits Completed (2015)",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/dsd/permits_completed_2015_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Permits Activity Dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/dsd/permits_activity_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "Permits Issued",
+      "identifier": "permits_issued_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2016-06-21",
+      "modified": "2019-03-18",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Development Services"
+      },
+      "category": ["Economy & Community"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Permits Issued (year-to-date)",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/dsd/permits_issued_ytd_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Permits Issued (2016)",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/dsd/permits_issued_2016_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Permits Issued (2015)",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/dsd/permits_issued_2015_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Permits Activity Dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/dsd/permits_activity_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "Police Beats",
+      "identifier": "police_beats_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2016-06-15",
+      "modified": "2019-04-30",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Police"
+      },
+      "category": ["GIS","Public Safety"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Police beats",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/pd/pd_beats_datasd.zip",
+          "mediaType": "application/octet-stream",
+          "format": "shp"
+        },
+        
+        {
+          "title": "Police beats",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/pd/pd_beats_datasd.pbf",
+          "mediaType": "application/octet-stream",
+          "format": "pbf"
+        },
+        
+        {
+          "title": "Police beats",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/pd/pd_beats_datasd.topojson",
+          "mediaType": "application/octet-stream",
+          "format": "topojson"
+        },
+        
+        {
+          "title": "Police beats",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/pd/pd_beats_datasd.geojson",
+          "mediaType": "application/json",
+          "format": "geojson"
+        },
+        
+        {
+          "title": "Police beats dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/pd/pd_beats_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "Police Calls Disposition Codes",
+      "identifier": "police_calls_disposition_codes_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2016-05-02",
+      "modified": "2017-01-20",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Police"
+      },
+      "category": ["Public Safety"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Police Calls Disposition Codes",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/pd/pd_dispo_codes_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Police Calls Disposition Codes Description",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/pd/pd_cfs_calltypes_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "Police Calls for Service",
+      "identifier": "police_calls_for_service_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2016-05-02",
+      "modified": "2017-08-14",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Police"
+      },
+      "category": ["Public Safety"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Police Calls for Service (year-to-date)",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/pd/pd_calls_for_service_2017_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Police Calls for Service (2016)",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/pd/pd_calls_for_service_2016_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Police Calls for Service (2015)",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/pd/pd_calls_for_service_2015_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Police Calls for Service Dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/pd/pd_calls_for_service_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "Traffic collisions",
+      "identifier": "traffic_collisions_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2017-05-03",
+      "modified": "2019-05-29",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Police"
+      },
+      "category": ["Public Safety"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Traffic collisions (2015 through year-to-date)",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/pd/pd_collisions_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Traffic collisions dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/pd/pd_collisions_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "Hate Crimes",
+      "identifier": "hate_crimes_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2018-11-08",
+      "modified": "2019-04-15",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Police"
+      },
+      "category": ["Public Safety"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Hate crimes 2016 through year-to-date",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/pd/hate_crimes_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Hate crimes dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/pd/hate_crimes_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "RIPA police stop data - actions taken",
+      "identifier": "ripa_police_stop_data_-_actions_taken_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2019-04-16",
+      "modified": "2019-04-16",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Police"
+      },
+      "category": ["Public Safety"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Actions taken",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/pd/ripa_actions_taken_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/pd/ripa_actions_taken_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "RIPA police stop data - contraband and/or evidence found",
+      "identifier": "ripa_police_stop_data_-_contraband_and/or_evidence_found_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2019-04-16",
+      "modified": "2019-04-16",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Police"
+      },
+      "category": ["Public Safety"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Contraband and/or evidence found",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/pd/ripa_contraband_evid_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/pd/ripa_contraband_evid_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "RIPA police stop data - disability of persons stopped",
+      "identifier": "ripa_police_stop_data_-_disability_of_persons_stopped_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2019-04-16",
+      "modified": "2019-04-16",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Police"
+      },
+      "category": ["Public Safety"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Disability of persons",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/pd/ripa_disability_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/pd/ripa_disability_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "RIPA police stop data - gender of persons stopped",
+      "identifier": "ripa_police_stop_data_-_gender_of_persons_stopped_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2019-04-16",
+      "modified": "2019-04-16",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Police"
+      },
+      "category": ["Public Safety"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Gender of persons",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/pd/ripa_gender_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/pd/ripa_gender_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "RIPA police stop data - basis for property seizure",
+      "identifier": "ripa_police_stop_data_-_basis_for_property_seizure_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2019-04-16",
+      "modified": "2019-04-16",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Police"
+      },
+      "category": ["Public Safety"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Basis for property seizure",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/pd/ripa_prop_seize_basis_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/pd/ripa_prop_seize_basis_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "RIPA police stop data - property seized",
+      "identifier": "ripa_police_stop_data_-_property_seized_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2019-04-16",
+      "modified": "2019-04-16",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Police"
+      },
+      "category": ["Public Safety"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Property seized",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/pd/ripa_prop_seize_type_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/pd/ripa_prop_seize_type_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "RIPA police stop data - race of persons stopped",
+      "identifier": "ripa_police_stop_data_-_race_of_persons_stopped_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2019-04-16",
+      "modified": "2019-04-16",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Police"
+      },
+      "category": ["Public Safety"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Race of persons",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/pd/ripa_race_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/pd/ripa_race_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "RIPA police stop data - basis for searches conducted",
+      "identifier": "ripa_police_stop_data_-_basis_for_searches_conducted_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2019-04-16",
+      "modified": "2019-04-16",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Police"
+      },
+      "category": ["Public Safety"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Basis for searches conducted",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/pd/ripa_search_basis_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/pd/ripa_search_basis_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "RIPA police stop data - reason for stop",
+      "identifier": "ripa_police_stop_data_-_reason_for_stop_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2019-04-16",
+      "modified": "2019-04-16",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Police"
+      },
+      "category": ["Public Safety"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Reason for stop",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/pd/ripa_stop_reason_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/pd/ripa_stop_reason_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "RIPA police stop data - result of stop",
+      "identifier": "ripa_police_stop_data_-_result_of_stop_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2019-04-16",
+      "modified": "2019-04-16",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Police"
+      },
+      "category": ["Public Safety"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Result of stop",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/pd/ripa_stop_result_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/pd/ripa_stop_result_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "RIPA police stop data - basic details",
+      "identifier": "ripa_police_stop_data_-_basic_details_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2019-04-16",
+      "modified": "2019-04-16",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Police"
+      },
+      "category": ["Public Safety"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Stop details",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/pd/ripa_stops_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/pd/ripa_stops_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "Police Vehicle Stops Search Details",
+      "identifier": "police_vehicle_stops_search_details_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2016-11-14",
+      "modified": "2019-04-16",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Police"
+      },
+      "category": ["Public Safety"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Vehicle Stops Search Details (2017 - June 2018)",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/pd/vehicle_stops_search_details_2017_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Vehicle Stops Search Details (2016)",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/pd/vehicle_stops_search_details_2016_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Vehicle Stops Search Details (2015)",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/pd/vehicle_stops_search_details_2015_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Vehicle Stops Search Details (2014)",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/pd/vehicle_stops_search_details_2014_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Vehicle Stops Search Details Dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/pd/vehicle_stops_search_details_dictionary.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Vehicle Stops Search Details Description List",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/pd/vehicle_stops_search_details_description_list.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "Police Vehicle Stops",
+      "identifier": "police_vehicle_stops_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2016-11-14",
+      "modified": "2019-04-16",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Police"
+      },
+      "category": ["Public Safety"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Vehicle Stops (Oct 2017 - June 2018, new format)",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/pd/vehicle_stops_final_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Vehicle Stops (2017 - June 2018, old format)",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/pd/vehicle_stops_2017_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Vehicle Stops (2016)",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/pd/vehicle_stops_2016_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Vehicle Stops (2015)",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/pd/vehicle_stops_2015_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Vehicle Stops (2014)",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/pd/vehicle_stops_2014_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Vehicle Stops Dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/pd/vehicle_stops_dictionary.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Vehicle Stops Race Codes",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/pd/vehicle_stops_race_codes.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "Promise Zone boundary",
+      "identifier": "promise_zone_boundary_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2017-06-30",
+      "modified": "2019-04-30",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Economic Development"
+      },
+      "category": ["GIS","Economy & Community"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Promise Zone boundary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/pz/promise_zone_datasd.zip",
+          "mediaType": "application/octet-stream",
+          "format": "shp"
+        },
+        
+        {
+          "title": "Promise Zone boundary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/pz/promise_zone_datasd.pbf",
+          "mediaType": "application/octet-stream",
+          "format": "pbf"
+        },
+        
+        {
+          "title": "Promise Zone boundary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/pz/promise_zone_datasd.topojson",
+          "mediaType": "application/octet-stream",
+          "format": "topojson"
+        },
+        
+        {
+          "title": "Promise Zone boundary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/pz/promise_zone_datasd.geojson",
+          "mediaType": "application/json",
+          "format": "geojson"
+        },
+        
+        {
+          "title": "Promise Zone boundary dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/addrapn/pz/promise_zone_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "Locations of artwork in the Civic Art Collection",
+      "identifier": "locations_of_artwork_in_the_civic_art_collection_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2018-09-11",
+      "modified": "2019-05-29",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Commission for Arts and Culture"
+      },
+      "category": "Culture & Recreation",
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Locations of artwork",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/public_art/public_art_locations_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Locations of artwork data dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/public_art/public_art_locations_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "Recreation Center Locations",
+      "identifier": "recreation_center_locations_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2016-06-16",
+      "modified": "2019-04-30",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Park & Recreation"
+      },
+      "category": ["GIS","Culture & Recreation"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Recreation center points",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/rec_centers/rec_centers_datasd.zip",
+          "mediaType": "application/octet-stream",
+          "format": "shp"
+        },
+        
+        {
+          "title": "Recreation center points",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/rec_centers/rec_centers_datasd.pbf",
+          "mediaType": "application/octet-stream",
+          "format": "pbf"
+        },
+        
+        {
+          "title": "Recreation center points",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/rec_centers/rec_centers_datasd.topojson",
+          "mediaType": "application/octet-stream",
+          "format": "topojson"
+        },
+        
+        {
+          "title": "Recreation center points",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/rec_centers/rec_centers_datasd.geojson",
+          "mediaType": "application/json",
+          "format": "geojson"
+        },
+        
+        {
+          "title": "Recreation center points dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/rec_centers/rec_centers_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "Resident Satisfaction survey results",
+      "identifier": "resident_satisfaction_survey_results_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2017-05-03",
+      "modified": "2017-05-03",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Performance & Analytics"
+      },
+      "category": "City Management",
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Resident Satisfaction survey results weighted",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/resident_survey/resident_survey_weighted_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Resident Satisfaction survey results unweighted",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/resident_survey/resident_survey_unweighted_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Resident Satisfaction survey data dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/resident_survey/resident_survey_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "Revolving Loan Fund Coverage",
+      "identifier": "revolving_loan_fund_coverage_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2016-05-09",
+      "modified": "2019-04-30",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Economic Development"
+      },
+      "category": ["GIS","Economy & Community"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Revolving Loan Fund coverage boundaries",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/sd_revloan/rev_loan_datasd.zip",
+          "mediaType": "application/octet-stream",
+          "format": "shp"
+        },
+        
+        {
+          "title": "Revolving Loan Fund coverage boundaries",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/sd_revloan/rev_loan_datasd.pbf",
+          "mediaType": "application/octet-stream",
+          "format": "pbf"
+        },
+        
+        {
+          "title": "Revolving Loan Fund coverage boundaries",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/sd_revloan/rev_loan_datasd.topojson",
+          "mediaType": "application/octet-stream",
+          "format": "topojson"
+        },
+        
+        {
+          "title": "Revolving Loan Fund coverage boundaries",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/sd_revloan/rev_loan_datasd.geojson",
+          "mediaType": "application/json",
+          "format": "geojson"
+        },
+        
+        {
+          "title": "Revolving Loan Fund coverage boundaries dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/sd_revloan/rev_loan_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "Right-of-way parcels",
+      "identifier": "right-of-way_parcels_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2017-06-30",
+      "modified": "2019-04-30",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "SanGIS"
+      },
+      "category": ["GIS","City Infrastructure"],
+      "contactPoint": {
+        "fn": "SanGIS",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Right-of-way parcels",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/right_of_way/right_of_way_datasd.zip",
+          "mediaType": "application/octet-stream",
+          "format": "shp"
+        },
+        
+        {
+          "title": "Right-of-way parcels",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/right_of_way/right_of_way_datasd.pbf",
+          "mediaType": "application/octet-stream",
+          "format": "pbf"
+        },
+        
+        {
+          "title": "Right-of-way parcels",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/right_of_way/right_of_way_datasd.topojson",
+          "mediaType": "application/octet-stream",
+          "format": "topojson"
+        },
+        
+        {
+          "title": "Right-of-way parcels",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/right_of_way/right_of_way_datasd.geojson",
+          "mediaType": "application/json",
+          "format": "geojson"
+        },
+        
+        {
+          "title": "Right-of-way parcels dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/right_of_way/right_of_way_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "Roads Lines",
+      "identifier": "roads_lines_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2016-05-09",
+      "modified": "2019-04-30",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "SanGIS"
+      },
+      "category": ["GIS","Transportation"],
+      "contactPoint": {
+        "fn": "SanGIS",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Roads lines",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/roads_all/roads_datasd.zip",
+          "mediaType": "application/octet-stream",
+          "format": "shp"
+        },
+        
+        {
+          "title": "Roads lines",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/roads_all/roads_datasd.pbf",
+          "mediaType": "application/octet-stream",
+          "format": "pbf"
+        },
+        
+        {
+          "title": "Roads lines",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/roads_all/roads_datasd.topojson",
+          "mediaType": "application/octet-stream",
+          "format": "topojson"
+        },
+        
+        {
+          "title": "Roads lines",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/roads_all/roads_datasd.geojson",
+          "mediaType": "application/json",
+          "format": "geojson"
+        },
+        
+        {
+          "title": "Roads lines dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/roads_all/roads_lines_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "San Diego city boundary",
+      "identifier": "san_diego_city_boundary_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2017-06-30",
+      "modified": "2019-04-30",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "SanGIS"
+      },
+      "category": ["GIS","City Management"],
+      "contactPoint": {
+        "fn": "SanGIS",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "San Diego boundary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/city_boundary/san_diego_boundary_datasd.zip",
+          "mediaType": "application/octet-stream",
+          "format": "shp"
+        },
+        
+        {
+          "title": "San Diego boundary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/city_boundary/san_diego_boundary_datasd.pbf",
+          "mediaType": "application/octet-stream",
+          "format": "pbf"
+        },
+        
+        {
+          "title": "San Diego boundary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/city_boundary/san_diego_boundary_datasd.topojson",
+          "mediaType": "application/octet-stream",
+          "format": "topojson"
+        },
+        
+        {
+          "title": "San Diego boundary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/city_boundary/san_diego_boundary_datasd.geojson",
+          "mediaType": "application/json",
+          "format": "geojson"
+        },
+        
+        {
+          "title": "San Diego boundary dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/city_boundary/san_diego_boundary_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "Solar Permits",
+      "identifier": "solar_permits_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2017-03-03",
+      "modified": "2019-03-18",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Development Services"
+      },
+      "category": ["Economy & Community","Energy & Environment"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Solar Permits Issued (year-to-date)",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/dsd/solar_permits_issued_ytd_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Solar Permits Issued (2016)",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/dsd/solar_permits_issued_2016_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Solar Permits Issued (2015)",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/dsd/solar_permits_issued_2015_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Permits Activity Dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/dsd/permits_activity_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "Special Events",
+      "identifier": "special_events_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2016-05-09",
+      "modified": "2019-05-29",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Special Events & Filming"
+      },
+      "category": ["Culture & Recreation"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Special Events List",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/special_events/special_events_list_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Special Events Dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/special_events/special_events_list_dictionary.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "Street Sweeping Schedule",
+      "identifier": "street_sweeping_schedule_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2016-05-18",
+      "modified": "2016-07-05",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Transportation & Storm Water"
+      },
+      "category": ["Transportation","City Infrastructure"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Street Sweeping Schedule",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/street_sweeping/street_sweeping_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Street Sweeping Possible Routes",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/street_sweeping/street_sweeping_possible_routes_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Street Sweeping Dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/street_sweeping/street_sweeping_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "Streetlight point locations",
+      "identifier": "streetlight_point_locations_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2017-05-03",
+      "modified": "2017-05-03",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Environmental Services"
+      },
+      "category": "City Infrastructure",
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Streetlight point locations",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/streetlight_inventory/streetlight_locations_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Streetlight point locations dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/streetlight_inventory/streetlight_locations_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "Streets Overall Condition Index (OCI)",
+      "identifier": "streets_overall_condition_index_(oci)_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2016-09-16",
+      "modified": "2017-01-17",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Transportation & Storm Water"
+      },
+      "category": ["Transportation","City Infrastructure"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Overall Condition Index (2015)",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/tsw/oci_2015_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Overall Condition Index (2011)",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/tsw/oci_2011_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Overall Condition Index Dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/tsw/oci_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "Streets Repair Projects",
+      "identifier": "streets_repair_projects_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2016-09-16",
+      "modified": "2019-05-29",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Transportation & Storm Water"
+      },
+      "category": ["Transportation","City Infrastructure"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Streets Repair Projects",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/tsw/sd_paving_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Streets Repair Projects Dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/tsw/sd_paving_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "Streets Repair Line Segments",
+      "identifier": "streets_repair_line_segments_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2016-09-16",
+      "modified": "2017-01-20",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Transportation & Storm Water"
+      },
+      "category": ["GIS","Transportation","City Infrastructure"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Street repair road lines",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/tsw/CG_STREETS_DATASD.zip",
+          "mediaType": "application/octet-stream",
+          "format": "shp"
+        },
+        
+        {
+          "title": "Street repair road lines dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/tsw/repair_segment_lines_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "Traffic Volumes",
+      "identifier": "traffic_volumes_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2016-05-17",
+      "modified": "2019-04-07",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Transportation & Storm Water"
+      },
+      "category": ["Transportation"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Traffic Counts",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/traffic_counts/traffic_counts_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Traffic Counts Dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/traffic_counts/traffic_counts_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "Transit Routes Lines",
+      "identifier": "transit_routes_lines_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2016-05-09",
+      "modified": "2019-04-30",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "SanGIS"
+      },
+      "category": ["GIS","Transportation"],
+      "contactPoint": {
+        "fn": "SanGIS",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Transit routes",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/transit_routes_gtfs/transit_routes_datasd.zip",
+          "mediaType": "application/octet-stream",
+          "format": "shp"
+        },
+        
+        {
+          "title": "Transit routes",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/transit_routes_gtfs/transit_routes_datasd.pbf",
+          "mediaType": "application/octet-stream",
+          "format": "pbf"
+        },
+        
+        {
+          "title": "Transit routes",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/transit_routes_gtfs/transit_routes_datasd.topojson",
+          "mediaType": "application/octet-stream",
+          "format": "topojson"
+        },
+        
+        {
+          "title": "Transit routes",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/transit_routes_gtfs/transit_routes_datasd.geojson",
+          "mediaType": "application/json",
+          "format": "geojson"
+        },
+        
+        {
+          "title": "Transit routes dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/transit_routes_gtfs/transit_routes_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "Transit Stops Locations",
+      "identifier": "transit_stops_locations_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2016-05-09",
+      "modified": "2019-04-30",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "SanGIS"
+      },
+      "category": ["GIS","Transportation"],
+      "contactPoint": {
+        "fn": "SanGIS",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Transit Stops Locations",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/transit_stops_gtfs/transit_stops_datasd.zip",
+          "mediaType": "application/octet-stream",
+          "format": "shp"
+        },
+        
+        {
+          "title": "Transit Stops Locations",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/transit_stops_gtfs/transit_stops_datasd.pbf",
+          "mediaType": "application/octet-stream",
+          "format": "pbf"
+        },
+        
+        {
+          "title": "Transit Stops Locations",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/transit_stops_gtfs/transit_stops_datasd.topojson",
+          "mediaType": "application/octet-stream",
+          "format": "topojson"
+        },
+        
+        {
+          "title": "Transit Stops Locations",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/transit_stops_gtfs/transit_stops_datasd.geojson",
+          "mediaType": "application/json",
+          "format": "geojson"
+        },
+        
+        {
+          "title": "Transit Stops Locations Dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/transit_stops_gtfs/transit_stops_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "Zoning",
+      "identifier": "zoning_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2016-06-16",
+      "modified": "2019-04-30",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Planning"
+      },
+      "category": ["GIS","Economy & Community"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Zoning",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/zoning/zoning_datasd.zip",
+          "mediaType": "application/octet-stream",
+          "format": "shp"
+        },
+        
+        {
+          "title": "Zoning",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/zoning/zoning_datasd.pbf",
+          "mediaType": "application/octet-stream",
+          "format": "pbf"
+        },
+        
+        {
+          "title": "Zoning",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/zoning/zoning_datasd.topojson",
+          "mediaType": "application/octet-stream",
+          "format": "topojson"
+        },
+        
+        {
+          "title": "Zoning",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/zoning/zoning_datasd.geojson",
+          "mediaType": "application/json",
+          "format": "geojson"
+        },
+        
+        {
+          "title": "Zoning dictionary",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/zoning/zoning_dictionary_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    }
+  ]
+}
