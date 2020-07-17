@@ -198,18 +198,18 @@ final_dataset_pages = dataset_pages_join.loc[dataset_pages_join['download_url'].
 
 final_dataset_pages['log.key'] = final_dataset_pages['download_url'].apply(lambda x: x.replace('http://seshat.datasd.org/',''))
 
-final_dataset_pages['page_path_2'] = final_dataset_pages['url'].apply(lambda x: x.replace('/datasets',''))
+final_dataset_pages['page_path_level2'] = final_dataset_pages['url'].apply(lambda x: x.replace('/datasets',''))
 
 # In[15]:
 
 print("Merging dataset info with Keen results")
-keen_pagepath = pd.merge(df_year_final,final_dataset_pages[['log.key','page_path_2']],left_on='log.key',right_on='log.key',how="left")
+keen_pagepath = pd.merge(df_year_final,final_dataset_pages[['log.key','page_path_level2']],left_on='log.key',right_on='log.key',how="left")
 
 # Here's how you make the old file lookup
-# missing_keys = keen_pagepath.loc[keen_pagepath['page_path_2'].isna(),'log.key'].tolist()
+# missing_keys = keen_pagepath.loc[keen_pagepath['page_path_level2'].isna(),'log.key'].tolist()
 # missing_keys_set = set(missing_keys)
 # old_file_lookup = pd.DataFrame(missing_keys_set,columns=['log.key'])
-# old_file_lookup['page_path_2'] = ''
+# old_file_lookup['page_path_level2'] = ''
 # old_file_lookup.to_csv(f'files/fy{fy}/old-file-lookup.csv',index=False)
 
 ## Use datasets.json to fill in the page path
@@ -222,8 +222,8 @@ keen_pagepath = pd.merge(df_year_final,final_dataset_pages[['log.key','page_path
 print("Looking up changes to datasets to fix for consistency")
 old_links = pd.read_csv(f'files/fy{fy}/old-file-lookup.csv')
 
-missing_pp2 = keen_pagepath.loc[keen_pagepath['page_path_2'].isna()]
-populated_pp2 = keen_pagepath.loc[~keen_pagepath['page_path_2'].isna()]
+missing_pp2 = keen_pagepath.loc[keen_pagepath['page_path_level2'].isna()]
+populated_pp2 = keen_pagepath.loc[~keen_pagepath['page_path_level2'].isna()]
 
 missing_merge = pd.merge(missing_pp2,
   old_links,
@@ -238,11 +238,11 @@ keen_final_pagepath = pd.concat([
   sort=False,
   )
 
-keen_final_pagepath.loc[keen_final_pagepath['page_path_2'].isna(),
-'page_path_2'] = keen_final_pagepath.loc[keen_final_pagepath['page_path_2'].isna(),
-'page_path_2_y']
+keen_final_pagepath.loc[keen_final_pagepath['page_path_level2'].isna(),
+'page_path_level2'] = keen_final_pagepath.loc[keen_final_pagepath['page_path_level2'].isna(),
+'page_path_level2_y']
 
-keen_final_pagepath = keen_final_pagepath.drop(columns=['page_path_2_x','page_path_2_y'])
+keen_final_pagepath = keen_final_pagepath.drop(columns=['page_path_level2_x','page_path_level2_y'])
 
 print("Writing dataset downloads")
 
@@ -252,4 +252,4 @@ keen_final_pagepath.to_csv(f'files/fy{fy}/dataset_downloads.csv',index=False)
 # In[22]:
 
 print("Writing page links")
-final_dataset_pages.groupby('page_path_2').size().reset_index(name='counts').to_csv(f'files/fy{fy}/dataset_page_links.csv',index=False)
+final_dataset_pages.groupby('page_path_level2').size().reset_index(name='counts').to_csv(f'files/fy{fy}/dataset_page_links.csv',index=False)

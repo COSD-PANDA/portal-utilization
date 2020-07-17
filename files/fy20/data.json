@@ -10,7 +10,7 @@
       "identifier": "address_points_to_apn_datasd",
       "@type": "dcat:Dataset",
       "issued": "2016-05-09",
-      "modified": "2020-04-21",
+      "modified": "2020-07-14",
       "accessLevel": "public",
       "publisher": {
         "@type": "org:department",
@@ -71,7 +71,7 @@
       "identifier": "bike_master_plan_datasd",
       "@type": "dcat:Dataset",
       "issued": "2017-06-30",
-      "modified": "2020-04-21",
+      "modified": "2020-07-14",
       "accessLevel": "public",
       "publisher": {
         "@type": "org:department",
@@ -132,7 +132,7 @@
       "identifier": "bike_route_lines_datasd",
       "@type": "dcat:Dataset",
       "issued": "2016-05-09",
-      "modified": "2020-04-21",
+      "modified": "2020-07-14",
       "accessLevel": "public",
       "publisher": {
         "@type": "org:department",
@@ -341,7 +341,7 @@
       "identifier": "business_improvement_districts_datasd",
       "@type": "dcat:Dataset",
       "issued": "2016-05-09",
-      "modified": "2020-04-21",
+      "modified": "2020-07-14",
       "accessLevel": "public",
       "publisher": {
         "@type": "org:department",
@@ -402,7 +402,7 @@
       "identifier": "business_tax_certificates_datasd",
       "@type": "dcat:Dataset",
       "issued": "2016-05-09",
-      "modified": "2020-04-22",
+      "modified": "2020-07-17",
       "accessLevel": "public",
       "publisher": {
         "@type": "org:department",
@@ -632,7 +632,7 @@
       "identifier": "city_council_districts_datasd",
       "@type": "dcat:Dataset",
       "issued": "2016-05-09",
-      "modified": "2020-04-21",
+      "modified": "2020-07-14",
       "accessLevel": "public",
       "publisher": {
         "@type": "org:department",
@@ -730,7 +730,7 @@
       "identifier": "city_owned_properties_-_leases_datasd",
       "@type": "dcat:Dataset",
       "issued": "2016-06-01",
-      "modified": "2020-04-12",
+      "modified": "2020-07-17",
       "accessLevel": "public",
       "publisher": {
         "@type": "org:department",
@@ -767,7 +767,7 @@
       "identifier": "city_owned_properties_-_parcels_datasd",
       "@type": "dcat:Dataset",
       "issued": "2016-06-01",
-      "modified": "2020-04-10",
+      "modified": "2020-07-17",
       "accessLevel": "public",
       "publisher": {
         "@type": "org:department",
@@ -857,7 +857,7 @@
       "identifier": "community_development_block_grant_(cdbg)_areas_datasd",
       "@type": "dcat:Dataset",
       "issued": "2017-06-30",
-      "modified": "2020-04-21",
+      "modified": "2020-07-14",
       "accessLevel": "public",
       "publisher": {
         "@type": "org:department",
@@ -918,7 +918,7 @@
       "identifier": "community_planning_districts_datasd",
       "@type": "dcat:Dataset",
       "issued": "2016-05-09",
-      "modified": "2020-04-21",
+      "modified": "2020-07-14",
       "accessLevel": "public",
       "publisher": {
         "@type": "org:department",
@@ -1053,7 +1053,7 @@
       "identifier": "data_inventory_datasd",
       "@type": "dcat:Dataset",
       "issued": "2015-05-23",
-      "modified": "2020-03-01",
+      "modified": "2020-06-30",
       "accessLevel": "public",
       "publisher": {
         "@type": "org:department",
@@ -1082,7 +1082,7 @@
       "identifier": "development_services_department_project_approvals_by_status,_set_1_of_2_datasd",
       "@type": "dcat:Dataset",
       "issued": "2020-03-10",
-      "modified": "2020-04-20",
+      "modified": "2020-06-28",
       "accessLevel": "public",
       "publisher": {
         "@type": "org:department",
@@ -1143,7 +1143,7 @@
       "identifier": "development_services_department_project_approvals_by_status,_set_2_of_2_datasd",
       "@type": "dcat:Dataset",
       "issued": "2020-03-10",
-      "modified": "2020-04-20",
+      "modified": "2020-06-28",
       "accessLevel": "public",
       "publisher": {
         "@type": "org:department",
@@ -1336,7 +1336,7 @@
       "identifier": "financial_support_for_candidates_and_ballot_measures_up_for_election_datasd",
       "@type": "dcat:Dataset",
       "issued": "2016-05-05",
-      "modified": "2020-04-22",
+      "modified": "2020-07-16",
       "accessLevel": "public",
       "publisher": {
         "@type": "org:department",
@@ -1477,7 +1477,7 @@
       "identifier": "fire_battalion_districts_datasd",
       "@type": "dcat:Dataset",
       "issued": "2017-06-30",
-      "modified": "2020-04-21",
+      "modified": "2020-07-14",
       "accessLevel": "public",
       "publisher": {
         "@type": "org:department",
@@ -1538,7 +1538,7 @@
       "identifier": "fire_incident_problem_counts_datasd",
       "@type": "dcat:Dataset",
       "issued": "2019-01-09",
-      "modified": "2020-04-22",
+      "modified": "2020-07-17",
       "accessLevel": "public",
       "publisher": {
         "@type": "org:department",
@@ -1575,7 +1575,7 @@
       "identifier": "fire_incidents_datasd",
       "@type": "dcat:Dataset",
       "issued": "2016-05-26",
-      "modified": "2020-04-22",
+      "modified": "2020-07-17",
       "accessLevel": "public",
       "publisher": {
         "@type": "org:department",
@@ -1716,7 +1716,7 @@
       "identifier": "fire_stations_datasd",
       "@type": "dcat:Dataset",
       "issued": "2016-05-09",
-      "modified": "2020-04-21",
+      "modified": "2020-07-14",
       "accessLevel": "public",
       "publisher": {
         "@type": "org:department",
@@ -1777,7 +1777,7 @@
       "identifier": "general_plan_land_use_datasd",
       "@type": "dcat:Dataset",
       "issued": "2016-05-09",
-      "modified": "2020-04-21",
+      "modified": "2020-06-30",
       "accessLevel": "public",
       "publisher": {
         "@type": "org:department",
@@ -1838,7 +1838,7 @@
       "identifier": "reports_of_non-emergency_problems_submitted_by_users_of_get_it_done_datasd",
       "@type": "dcat:Dataset",
       "issued": "2016-05-26",
-      "modified": "2020-04-22",
+      "modified": "2020-07-16",
       "accessLevel": "public",
       "publisher": {
         "@type": "org:department",
@@ -1931,7 +1931,7 @@
       "identifier": "72-hour_parking_violation_notifications_datasd",
       "@type": "dcat:Dataset",
       "issued": "2017-06-13",
-      "modified": "2020-04-22",
+      "modified": "2020-07-17",
       "accessLevel": "public",
       "publisher": {
         "@type": "org:department",
@@ -1968,7 +1968,7 @@
       "identifier": "graffiti_removal_requests_datasd",
       "@type": "dcat:Dataset",
       "issued": "2017-06-13",
-      "modified": "2020-04-22",
+      "modified": "2020-07-17",
       "accessLevel": "public",
       "publisher": {
         "@type": "org:department",
@@ -2005,7 +2005,7 @@
       "identifier": "illegal_dumping_notifications_datasd",
       "@type": "dcat:Dataset",
       "issued": "2017-06-13",
-      "modified": "2020-04-22",
+      "modified": "2020-07-16",
       "accessLevel": "public",
       "publisher": {
         "@type": "org:department",
@@ -2042,7 +2042,7 @@
       "identifier": "pothole_repair_requests_datasd",
       "@type": "dcat:Dataset",
       "issued": "2017-06-13",
-      "modified": "2020-04-22",
+      "modified": "2020-07-17",
       "accessLevel": "public",
       "publisher": {
         "@type": "org:department",
@@ -2079,7 +2079,7 @@
       "identifier": "historical_districts_datasd",
       "@type": "dcat:Dataset",
       "issued": "2017-06-30",
-      "modified": "2020-04-21",
+      "modified": "2020-07-14",
       "accessLevel": "public",
       "publisher": {
         "@type": "org:department",
@@ -2201,7 +2201,7 @@
       "identifier": "library_locations_datasd",
       "@type": "dcat:Dataset",
       "issued": "2016-05-09",
-      "modified": "2020-04-21",
+      "modified": "2020-04-28",
       "accessLevel": "public",
       "publisher": {
         "@type": "org:department",
@@ -2262,7 +2262,7 @@
       "identifier": "lifeguard_station_point_locations_datasd",
       "@type": "dcat:Dataset",
       "issued": "2017-06-30",
-      "modified": "2020-04-21",
+      "modified": "2020-07-14",
       "accessLevel": "public",
       "publisher": {
         "@type": "org:department",
@@ -2323,7 +2323,7 @@
       "identifier": "maintenance_assessment_districts_datasd",
       "@type": "dcat:Dataset",
       "issued": "2017-06-30",
-      "modified": "2020-04-21",
+      "modified": "2020-07-14",
       "accessLevel": "public",
       "publisher": {
         "@type": "org:department",
@@ -2384,7 +2384,7 @@
       "identifier": "multi-habitat_planning_areas_datasd",
       "@type": "dcat:Dataset",
       "issued": "2017-06-30",
-      "modified": "2020-04-21",
+      "modified": "2020-07-14",
       "accessLevel": "public",
       "publisher": {
         "@type": "org:department",
@@ -2445,7 +2445,7 @@
       "identifier": "monitoring_of_indicator_bacteria_in_drinking_water_datasd",
       "@type": "dcat:Dataset",
       "issued": "2016-05-11",
-      "modified": "2020-04-22",
+      "modified": "2020-07-17",
       "accessLevel": "public",
       "publisher": {
         "@type": "org:department",
@@ -2601,7 +2601,7 @@
       "identifier": "park_locations_datasd",
       "@type": "dcat:Dataset",
       "issued": "2016-06-17",
-      "modified": "2020-04-21",
+      "modified": "2020-07-14",
       "accessLevel": "public",
       "publisher": {
         "@type": "org:department",
@@ -2662,7 +2662,7 @@
       "identifier": "parking_meters_locations_datasd",
       "@type": "dcat:Dataset",
       "issued": "2016-05-18",
-      "modified": "2019-09-23",
+      "modified": "2020-07-16",
       "accessLevel": "public",
       "publisher": {
         "@type": "org:department",
@@ -2699,7 +2699,7 @@
       "identifier": "parking_meters_transactions_datasd",
       "@type": "dcat:Dataset",
       "issued": "2016-05-02",
-      "modified": "2020-04-22",
+      "modified": "2020-05-17",
       "accessLevel": "public",
       "publisher": {
         "@type": "org:department",
@@ -2763,6 +2763,30 @@
         },
         
         {
+          "title": "Parking meters transactions - 2018 (raw)",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/parking_meters/treas_parking_payments_2018_datasd_v1.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Parking meters transactions - 2018 (aggregated by day)",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/parking_meters/treas_meters_2018_pole_by_mo_day_datasd_v1.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Parking meters transactions - 2018 (aggregated by month)",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/parking_meters/treas_meters_2018_pole_by_month_datasd_v1.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
           "title": "Parking Meter Transactions Data Dictionary",
           "@type": "dcat:Distribution",
           "downloadURL": "http://seshat.datasd.org/parking_meters/meters_transactions_dictionary_datasd.csv",
@@ -2776,7 +2800,7 @@
       "identifier": "police_divisions_datasd",
       "@type": "dcat:Dataset",
       "issued": "2017-06-30",
-      "modified": "2020-04-21",
+      "modified": "2020-07-14",
       "accessLevel": "public",
       "publisher": {
         "@type": "org:department",
@@ -2837,7 +2861,7 @@
       "identifier": "police_neighborhoods_datasd",
       "@type": "dcat:Dataset",
       "issued": "2017-06-30",
-      "modified": "2020-04-21",
+      "modified": "2020-07-14",
       "accessLevel": "public",
       "publisher": {
         "@type": "org:department",
@@ -2898,7 +2922,7 @@
       "identifier": "police_beats_datasd",
       "@type": "dcat:Dataset",
       "issued": "2016-06-15",
-      "modified": "2020-04-21",
+      "modified": "2020-07-14",
       "accessLevel": "public",
       "publisher": {
         "@type": "org:department",
@@ -2955,11 +2979,11 @@
       ]
     },
     {
-      "title": "Police Calls Disposition Codes",
-      "identifier": "police_calls_disposition_codes_datasd",
+      "title": "Police Calls for Service Call Types",
+      "identifier": "police_calls_for_service_call_types_datasd",
       "@type": "dcat:Dataset",
       "issued": "2016-05-02",
-      "modified": "2017-01-20",
+      "modified": "2020-05-03",
       "accessLevel": "public",
       "publisher": {
         "@type": "org:department",
@@ -2975,7 +2999,44 @@
       "distribution": [
         
         {
-          "title": "Police Calls Disposition Codes",
+          "title": "Call Types, current",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/pd/pd_cfs_calltypes_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        },
+        
+        {
+          "title": "Call Types, prior to October 17, 2017",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/pd/pd_cfs_calltypes_historical_datasd.csv",
+          "mediaType": "text/csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "title": "Police Calls for Service Disposition Codes",
+      "identifier": "police_calls_for_service_disposition_codes_datasd",
+      "@type": "dcat:Dataset",
+      "issued": "2016-05-02",
+      "modified": "2020-05-03",
+      "accessLevel": "public",
+      "publisher": {
+        "@type": "org:department",
+        "name": "Police"
+      },
+      "category": ["Public Safety"],
+      "contactPoint": {
+        "fn": "City of San Diego",
+        "hasEmail": "data@sandiego.gov"
+      },
+      "license": "http://www.opendefinition.org/licenses/odc-pddl"
+      ,
+      "distribution": [
+        
+        {
+          "title": "Disposition Codes, current",
           "@type": "dcat:Distribution",
           "downloadURL": "http://seshat.datasd.org/pd/pd_dispo_codes_datasd.csv",
           "mediaType": "text/csv",
@@ -2983,9 +3044,9 @@
         },
         
         {
-          "title": "Police Calls Disposition Codes Description",
+          "title": "Disposition Codes, prior to October 17, 2017",
           "@type": "dcat:Distribution",
-          "downloadURL": "http://seshat.datasd.org/pd/pd_cfs_calltypes_datasd.csv",
+          "downloadURL": "http://seshat.datasd.org/pd/pd_dispo_codes_historical_datasd.csv",
           "mediaType": "text/csv",
           "format": "csv"
         }
@@ -2996,7 +3057,7 @@
       "identifier": "police_calls_for_service_datasd",
       "@type": "dcat:Dataset",
       "issued": "2016-05-02",
-      "modified": "2020-04-22",
+      "modified": "2020-07-16",
       "accessLevel": "public",
       "publisher": {
         "@type": "org:department",
@@ -3073,7 +3134,7 @@
       "identifier": "traffic_collisions_datasd",
       "@type": "dcat:Dataset",
       "issued": "2017-05-03",
-      "modified": "2020-04-22",
+      "modified": "2020-07-16",
       "accessLevel": "public",
       "publisher": {
         "@type": "org:department",
@@ -3110,7 +3171,7 @@
       "identifier": "hate_crimes_datasd",
       "@type": "dcat:Dataset",
       "issued": "2018-11-08",
-      "modified": "2020-02-06",
+      "modified": "2020-06-04",
       "accessLevel": "public",
       "publisher": {
         "@type": "org:department",
@@ -3147,7 +3208,7 @@
       "identifier": "ripa_police_stop_data_-_actions_taken_datasd",
       "@type": "dcat:Dataset",
       "issued": "2019-04-16",
-      "modified": "2020-03-06",
+      "modified": "2020-07-15",
       "accessLevel": "public",
       "publisher": {
         "@type": "org:department",
@@ -3184,7 +3245,7 @@
       "identifier": "ripa_police_stop_data_-_contraband_and/or_evidence_found_datasd",
       "@type": "dcat:Dataset",
       "issued": "2019-04-16",
-      "modified": "2020-03-06",
+      "modified": "2020-07-15",
       "accessLevel": "public",
       "publisher": {
         "@type": "org:department",
@@ -3221,7 +3282,7 @@
       "identifier": "ripa_police_stop_data_-_disability_of_persons_stopped_datasd",
       "@type": "dcat:Dataset",
       "issued": "2019-04-16",
-      "modified": "2020-03-06",
+      "modified": "2020-07-15",
       "accessLevel": "public",
       "publisher": {
         "@type": "org:department",
@@ -3258,7 +3319,7 @@
       "identifier": "ripa_police_stop_data_-_gender_of_persons_stopped_datasd",
       "@type": "dcat:Dataset",
       "issued": "2019-04-16",
-      "modified": "2020-03-06",
+      "modified": "2020-07-15",
       "accessLevel": "public",
       "publisher": {
         "@type": "org:department",
@@ -3295,7 +3356,7 @@
       "identifier": "ripa_police_stop_data_-_basis_for_property_seizure_datasd",
       "@type": "dcat:Dataset",
       "issued": "2019-04-16",
-      "modified": "2020-03-06",
+      "modified": "2020-07-15",
       "accessLevel": "public",
       "publisher": {
         "@type": "org:department",
@@ -3332,7 +3393,7 @@
       "identifier": "ripa_police_stop_data_-_property_seized_datasd",
       "@type": "dcat:Dataset",
       "issued": "2019-04-16",
-      "modified": "2020-03-06",
+      "modified": "2020-07-15",
       "accessLevel": "public",
       "publisher": {
         "@type": "org:department",
@@ -3369,7 +3430,7 @@
       "identifier": "ripa_police_stop_data_-_race_of_persons_stopped_datasd",
       "@type": "dcat:Dataset",
       "issued": "2019-04-16",
-      "modified": "2020-03-06",
+      "modified": "2020-07-15",
       "accessLevel": "public",
       "publisher": {
         "@type": "org:department",
@@ -3406,7 +3467,7 @@
       "identifier": "ripa_police_stop_data_-_basis_for_searches_conducted_datasd",
       "@type": "dcat:Dataset",
       "issued": "2019-04-16",
-      "modified": "2020-03-06",
+      "modified": "2020-07-15",
       "accessLevel": "public",
       "publisher": {
         "@type": "org:department",
@@ -3443,7 +3504,7 @@
       "identifier": "ripa_police_stop_data_-_reason_for_stop_datasd",
       "@type": "dcat:Dataset",
       "issued": "2019-04-16",
-      "modified": "2020-03-06",
+      "modified": "2020-07-15",
       "accessLevel": "public",
       "publisher": {
         "@type": "org:department",
@@ -3480,7 +3541,7 @@
       "identifier": "ripa_police_stop_data_-_result_of_stop_datasd",
       "@type": "dcat:Dataset",
       "issued": "2019-04-16",
-      "modified": "2020-03-06",
+      "modified": "2020-07-15",
       "accessLevel": "public",
       "publisher": {
         "@type": "org:department",
@@ -3517,7 +3578,7 @@
       "identifier": "ripa_police_stop_data_-_basic_details_datasd",
       "@type": "dcat:Dataset",
       "issued": "2019-04-16",
-      "modified": "2020-03-06",
+      "modified": "2020-07-15",
       "accessLevel": "public",
       "publisher": {
         "@type": "org:department",
@@ -3700,7 +3761,7 @@
       "identifier": "promise_zone_boundary_datasd",
       "@type": "dcat:Dataset",
       "issued": "2017-06-30",
-      "modified": "2020-04-21",
+      "modified": "2020-07-14",
       "accessLevel": "public",
       "publisher": {
         "@type": "org:department",
@@ -3761,7 +3822,7 @@
       "identifier": "locations_of_artwork_in_the_civic_art_collection_datasd",
       "@type": "dcat:Dataset",
       "issued": "2018-09-11",
-      "modified": "2020-04-22",
+      "modified": "2020-07-17",
       "accessLevel": "public",
       "publisher": {
         "@type": "org:department",
@@ -3798,7 +3859,7 @@
       "identifier": "recreation_center_locations_datasd",
       "@type": "dcat:Dataset",
       "issued": "2016-06-16",
-      "modified": "2020-04-21",
+      "modified": "2020-07-14",
       "accessLevel": "public",
       "publisher": {
         "@type": "org:department",
@@ -3904,7 +3965,7 @@
       "identifier": "revolving_loan_fund_coverage_datasd",
       "@type": "dcat:Dataset",
       "issued": "2016-05-09",
-      "modified": "2020-04-21",
+      "modified": "2020-07-14",
       "accessLevel": "public",
       "publisher": {
         "@type": "org:department",
@@ -4026,7 +4087,7 @@
       "identifier": "roads_lines_datasd",
       "@type": "dcat:Dataset",
       "issued": "2016-05-09",
-      "modified": "2020-04-21",
+      "modified": "2020-06-30",
       "accessLevel": "public",
       "publisher": {
         "@type": "org:department",
@@ -4087,7 +4148,7 @@
       "identifier": "san_diego_city_boundary_datasd",
       "@type": "dcat:Dataset",
       "issued": "2017-06-30",
-      "modified": "2020-04-21",
+      "modified": "2020-07-14",
       "accessLevel": "public",
       "publisher": {
         "@type": "org:department",
@@ -4148,7 +4209,7 @@
       "identifier": "special_events_datasd",
       "@type": "dcat:Dataset",
       "issued": "2016-05-09",
-      "modified": "2020-04-22",
+      "modified": "2020-07-17",
       "accessLevel": "public",
       "publisher": {
         "@type": "org:department",
@@ -4312,7 +4373,7 @@
       "identifier": "streets_repair_projects_datasd",
       "@type": "dcat:Dataset",
       "issued": "2016-09-16",
-      "modified": "2020-04-22",
+      "modified": "2020-07-17",
       "accessLevel": "public",
       "publisher": {
         "@type": "org:department",
@@ -4349,7 +4410,7 @@
       "identifier": "streets_repair_line_segments_datasd",
       "@type": "dcat:Dataset",
       "issued": "2016-09-16",
-      "modified": "2020-04-21",
+      "modified": "2020-07-14",
       "accessLevel": "public",
       "publisher": {
         "@type": "org:department",
@@ -4365,19 +4426,35 @@
       "distribution": [
         
         {
-          "title": "Street repair road lines",
+          "title": "Street segment lines",
           "@type": "dcat:Distribution",
-          "downloadURL": "http://seshat.datasd.org/tsw/CG_STREETS_DATASD.zip",
+          "downloadURL": "http://seshat.datasd.org/sde/paving_segments/sd_paving_segs_datasd.zip",
           "mediaType": "application/octet-stream",
           "format": "shp"
         },
         
         {
-          "title": "Street repair road lines dictionary",
+          "title": "Street segment lines",
           "@type": "dcat:Distribution",
-          "downloadURL": "http://seshat.datasd.org/tsw/repair_segment_lines_dictionary_datasd.csv",
-          "mediaType": "text/csv",
-          "format": "csv"
+          "downloadURL": "http://seshat.datasd.org/sde/paving_segments/sd_paving_segs_datasd.pbf",
+          "mediaType": "application/octet-stream",
+          "format": "pbf"
+        },
+        
+        {
+          "title": "Street segment lines",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/paving_segments/sd_paving_segs_datasd.topojson",
+          "mediaType": "application/octet-stream",
+          "format": "topojson"
+        },
+        
+        {
+          "title": "Street segment lines",
+          "@type": "dcat:Distribution",
+          "downloadURL": "http://seshat.datasd.org/sde/paving_segments/sd_paving_segs_datasd.geojson",
+          "mediaType": "application/json",
+          "format": "geojson"
         }
       ]
     },
@@ -4386,7 +4463,7 @@
       "identifier": "traffic_volumes_datasd",
       "@type": "dcat:Dataset",
       "issued": "2016-05-17",
-      "modified": "2020-03-29",
+      "modified": "2020-06-27",
       "accessLevel": "public",
       "publisher": {
         "@type": "org:department",
@@ -4423,7 +4500,7 @@
       "identifier": "transit_routes_lines_datasd",
       "@type": "dcat:Dataset",
       "issued": "2016-05-09",
-      "modified": "2020-04-21",
+      "modified": "2020-07-14",
       "accessLevel": "public",
       "publisher": {
         "@type": "org:department",
@@ -4484,7 +4561,7 @@
       "identifier": "transit_stops_locations_datasd",
       "@type": "dcat:Dataset",
       "issued": "2016-05-09",
-      "modified": "2020-04-21",
+      "modified": "2020-07-14",
       "accessLevel": "public",
       "publisher": {
         "@type": "org:department",
@@ -4545,7 +4622,7 @@
       "identifier": "zoning_datasd",
       "@type": "dcat:Dataset",
       "issued": "2016-06-16",
-      "modified": "2020-04-21",
+      "modified": "2020-07-14",
       "accessLevel": "public",
       "publisher": {
         "@type": "org:department",

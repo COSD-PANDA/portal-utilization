@@ -22,9 +22,9 @@ visits = pd.read_csv('http://seshat.datasd.org.s3.amazonaws.com/web_analytics/po
 
 
 # Pull visits from the portal pages dataset
-visits_pages = visits.loc[(visits['page_path_1'] == '/datasets/') 
+visits_pages = visits.loc[(visits['page_path_level1'] == '/datasets/') 
 & ((visits['date'] >= f'20{fy-1}-07-01')&(visits['date'] < f'20{fy}-07-01')),
-['date','page_path_2','users','pageviews']].copy()
+['date','page_path_level2','users','pageviews']].copy()
 
 print(f"Filtering GA for fiscal year and datasets for a total of {visits_pages.shape[0]} records")
 
@@ -63,13 +63,13 @@ monthly_users = visits_pages.groupby(['date_month']).agg({'users':'sum'}).reset_
 
 
 # Get list of most visited pages
-users_by_page = visits_pages.groupby(['page_path_2']).agg({'users': 'sum','pageviews':'sum'}).reset_index()
+users_by_page = visits_pages.groupby(['page_path_level2']).agg({'users': 'sum','pageviews':'sum'}).reset_index()
 
 
 # In[9]:
 
 print("Calculating monthly users by page and writing to csv")
-visits_pages.groupby(['page_path_2','date_month']).agg({'users': 'sum','pageviews':'sum'}).reset_index().to_csv(f'files/fy{fy}/portal-pages-months.csv',index=False)
+visits_pages.groupby(['page_path_level2','date_month']).agg({'users': 'sum','pageviews':'sum'}).reset_index().to_csv(f'files/fy{fy}/portal-pages-months.csv',index=False)
 
 
 # In[11]:
@@ -83,7 +83,7 @@ keen['date_full'] = keen['date_full'].astype(str)
 
 print("Joining GA to Keen")
 # Join page visits to keen page groups
-keen_visits_merge = pd.merge(keen,visits_pages[['page_path_2','pageviews','date']],how="left",left_on=['page_path_2','date_full'],right_on=['page_path_2','date'])
+keen_visits_merge = pd.merge(keen,visits_pages[['page_path_level2','pageviews','date']],how="left",left_on=['page_path_level2','date_full'],right_on=['page_path_level2','date'])
 
 
 # In[14]:
@@ -100,7 +100,7 @@ keen_visits_merge['pageviews'] = keen_visits_merge['pageviews'].fillna(0)
 # In[15]:
 print("Subsetting into objects with a dataset page and objects without one")
 # Get total downloads by day by page by user agent
-keen_page_groups = keen_visits_merge.loc[keen_visits_merge['page_path_2'] != ''].groupby(['page_path_2',
+keen_page_groups = keen_visits_merge.loc[keen_visits_merge['page_path_level2'] != ''].groupby(['page_path_level2',
                                                                                           'user_agent_family',
                                                                                           'date_full',
                                                                                           'date_month'
@@ -112,7 +112,7 @@ keen_page_groups = keen_visits_merge.loc[keen_visits_merge['page_path_2'] != '']
 # In[16]:
 
 
-keen_nopages = keen_visits_merge.loc[keen_visits_merge['page_path_2'].isnull()]
+keen_nopages = keen_visits_merge.loc[keen_visits_merge['page_path_level2'].isnull()]
 
 print("Writing drupal activity per month")
 keen_nopages.loc[keen_nopages['log.key'].str.startswith('city_docs/')].groupby(['log.key','date_month']).aggregate({'result':'sum'}).reset_index().to_csv(f'files/fy{fy}/keen-drupal-months.csv',index=False)
@@ -246,7 +246,7 @@ print(f"Total downloads is {total_downloads}")
 
 
 # Get downloads by type by page
-page_downloads = keen_page_groups.groupby(['page_path_2','user_agent_type']).agg({'result':'sum'}).reset_index()
+page_downloads = keen_page_groups.groupby(['page_path_level2','user_agent_type']).agg({'result':'sum'}).reset_index()
 
 
 # In[29]:
@@ -265,7 +265,7 @@ keen_browser = page_downloads.loc[page_downloads['user_agent_type'] == 'browser'
 # In[31]:
 
 
-keen_browser_users = pd.merge(keen_browser,users_by_page,how="left",left_on="page_path_2",right_on='page_path_2')
+keen_browser_users = pd.merge(keen_browser,users_by_page,how="left",left_on="page_path_level2",right_on='page_path_level2')
 
 
 # In[32]:
@@ -277,7 +277,7 @@ pages_links = pd.read_csv(f'files/fy{fy}/dataset_page_links.csv')
 # In[33]:
 
 print("Merging Keen events from browsers per page with number of links per page")
-keen_users_links = pd.merge(keen_browser_users,pages_links,how='left',left_on="page_path_2",right_on='page_path_2')
+keen_users_links = pd.merge(keen_browser_users,pages_links,how='left',left_on="page_path_level2",right_on='page_path_level2')
 
 
 # In[34]:
