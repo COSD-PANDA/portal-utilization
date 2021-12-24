@@ -3,7 +3,7 @@
 
 The utilization rate is a weighted average of number of downloads per website visitor. This is calculated per dataset page then summed to get an overall number for the portal.
 
-For each dataset page, we start by summing the number of certain kinds of S3 log events registered for all of the S3 objects linked on that page. The log events are stored in Keen. The log events we use are Get object requests coming from a user agent that is a web browser. We then divide this number by the number of unique visitors to that dataset page as tracked by Google Analytics. That gives us the average downloads per visitor. 
+For each dataset page, we start by summing the number of certain kinds of S3 log events registered for all of the S3 objects linked on that page. The log events are stored in AWS. The log events we use are Get object requests coming from a user agent that is a web browser. We then divide this number by the number of unique visitors to that dataset page as tracked by Google Analytics. That gives us the average downloads per visitor. 
 
 However, the average must be weighted for the number of S3 objects linked on a page because a page with more than one link could have more downloads. To weight the average, we multiply it by an inverted count of the number of links. Using an inverted count penalizes the pages with more links in relation to pages with fewer links.
 
@@ -23,7 +23,7 @@ The data.json file is the official open data catalog file that conforms to the P
 
 These are the steps to calculate the metric:
 1. Update the fiscal year variable in both scripts.
-2. Run the keen_analytics.py script. If you need to create old-file-lookup.csv, you will need to run this script twice. The first time, you'll be building the old-file-lookup.csv. Uncomment lines 209-213 and line 250 and comment out lines 222 - 249. The second time, you'll have the old-file-lookup created, so you can re-comment lines 209-213 and line 250 and uncomment lines 222-249. Is this a good way to do this? No. Anyway, make old-file-lookup by manually filling in the page_path_2. You can do this by referring to data.json and datasets.json for previous years. One output of this is dataset_downloads.csv, which is the number of keen events (result column) per S3 object per day, with the corresponding GA page path. Another output is dataset_page_links.csv.
+2. Run the aws_log_analytics.py script. If you need to create old-file-lookup.csv, you will need to run this script twice. The first time, you'll be building the old-file-lookup.csv. Uncomment lines 167-171 and line 207 and comment out lines 180 - 206. The second time, you'll have the old-file-lookup created, so you can re-comment lines 167-171 and line 207 and uncomment lines 180-206. Is this a good way to do this? No. Anyway, make old-file-lookup by manually filling in the page_path_2. You can do this by referring to data.json and datasets.json for previous years. One output of this is dataset_downloads.csv, which is the number of keen events (result column) per S3 object per day, with the corresponding GA page path. Another output is dataset_page_links.csv.
 3. Run the kpi-calc script. The overall utilization will print in the terminal, and the script will output portal-utilization.csv with the utilization per page. It also outputs other helpful files, listed below:
 
 - portal-pages-months.csv has the number of pageviews and users per portal page (page_path_2 field) per month for this fiscal year time period.

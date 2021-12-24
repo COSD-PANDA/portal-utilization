@@ -7,12 +7,11 @@
 import keen
 import pandas as pd
 import json
-from pandas.io.json import json_normalize
 import numpy as np
 from ua_parser import user_agent_parser
 import re
 from datetime import datetime, timedelta
-fy = 20
+fy = 21
 
 # In[2]:
 
@@ -138,7 +137,7 @@ for index, month in enumerate(months_tf):
                                 filters=[{'property_name':'log.operation',
                                    'operator':'contains',
                                    'property_value':'GET.OBJECT'}])
-    df = pd.io.json.json_normalize(downloads, 'value', [['timeframe','end'],['timeframe','start']])
+    df = pd.json_normalize(downloads, 'value', [['timeframe','end'],['timeframe','start']])
     dfs_year.append(df)
     print(f"appended month {index}")
 
@@ -147,6 +146,8 @@ for index, month in enumerate(months_tf):
 
 print("Concatting months")
 df_year_all = pd.concat(dfs_year,ignore_index=True)
+
+df_year_all.to_csv(f'files/fy{fy}/keen_unprocessed.csv',index=False)
 
 
 df_year_process = process_results(df_year_all)
@@ -169,7 +170,7 @@ dataset_urls = pd.read_json(f'files/fy{fy}/datasets.json')
 with open(f"files/fy{fy}/data.json", "r") as read_file:
     datasets = json.load(read_file)
 
-resource_files = json_normalize(data=datasets['dataset'], 
+resource_files = pd.json_normalize(data=datasets['dataset'], 
                                 record_path='distribution', 
                                 meta=['title'],
                                 meta_prefix='page_'
@@ -192,25 +193,26 @@ dataset_pages_join = pd.merge(resource_files[['download_url',
                               right_on="title",
                               how="left")
 
+
+
 dataset_pages_join = dataset_pages_join.rename({'title':'dataset_name'})
 
-final_dataset_pages = dataset_pages_join.loc[dataset_pages_join['download_url'].str.startswith('http://seshat.datasd.org/')].copy()
+final_dataset_pages = dataset_pages_join.loc[dataset_pages_join['download_url'].str.startswith('https://seshat.datasd.org/')].copy()
 
-final_dataset_pages['log.key'] = final_dataset_pages['download_url'].apply(lambda x: x.replace('http://seshat.datasd.org/',''))
+final_dataset_pages['log.key'] = final_dataset_pages['download_url'].apply(lambda x: x.replace('https://seshat.datasd.org/',''))
 
 final_dataset_pages['page_path_level2'] = final_dataset_pages['url'].apply(lambda x: x.replace('/datasets',''))
-
 # In[15]:
 
 print("Merging dataset info with Keen results")
 keen_pagepath = pd.merge(df_year_final,final_dataset_pages[['log.key','page_path_level2']],left_on='log.key',right_on='log.key',how="left")
 
 # Here's how you make the old file lookup
-# missing_keys = keen_pagepath.loc[keen_pagepath['page_path_level2'].isna(),'log.key'].tolist()
-# missing_keys_set = set(missing_keys)
-# old_file_lookup = pd.DataFrame(missing_keys_set,columns=['log.key'])
-# old_file_lookup['page_path_level2'] = ''
-# old_file_lookup.to_csv(f'files/fy{fy}/old-file-lookup.csv',index=False)
+#missing_keys = keen_pagepath.loc[keen_pagepath['page_path_level2'].isna(),'log.key'].tolist()
+#missing_keys_set = set(missing_keys)
+#old_file_lookup = pd.DataFrame(missing_keys_set,columns=['log.key'])
+#old_file_lookup['page_path_level2'] = ''
+#old_file_lookup.to_csv(f'files/fy{fy}/old-file-lookup.csv',index=False)
 
 ## Use datasets.json to fill in the page path
 
@@ -243,7 +245,6 @@ keen_final_pagepath.loc[keen_final_pagepath['page_path_level2'].isna(),
 'page_path_level2_y']
 
 keen_final_pagepath = keen_final_pagepath.drop(columns=['page_path_level2_x','page_path_level2_y'])
-
 print("Writing dataset downloads")
 
 keen_final_pagepath.to_csv(f'files/fy{fy}/dataset_downloads.csv',index=False)
