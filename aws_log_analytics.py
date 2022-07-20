@@ -4,7 +4,6 @@
 # In[1]:
 
 
-import keen
 import pandas as pd
 import json
 import numpy as np
@@ -14,11 +13,6 @@ from datetime import datetime, timedelta
 fy = 22
 
 # In[2]:
-
-
-keen.project_id = "58b083098db53dfda8a88bcf"
-keen.read_key = "B857F220E3CC4D775E1BBDD56F428903B1A147AE129C80D9020ADC43CBC32FFF1880586A273E876D4566B03C5042BA706F239E75A958A70E5943581845EC115FFC80294614FF8876DAB9BE2B58B2325875330D879D63FDF69CB1514185911CE5"
-keen.master_key = "C1D6737D0D885EAC071B7BBC73AE2DC34A65095D1BFE261C59195FABC3863388"
 
 
 # In[3]:
@@ -60,7 +54,8 @@ def filter_files(df):
                                        (df.file_type == 'zip') |
                                        (df.file_type == 'geojson') |
                                        (df.file_type == 'pbf') |
-                                       (df.file_type == 'topojson')
+                                       (df.file_type == 'topojson') |
+                                       (df.file_type == 'json')
                                       ]
     #filter2 = filter1.loc[(~filter1['log.key'].str.startswith('city_docs/'))]
     filter3 = filter1.loc[filter1['result']>0]
@@ -111,33 +106,15 @@ def process_results(df):
 
 
 # Here, we are making the request for data to Keen
-
-months_tf = [{"start":f"20{fy-1}-07-01T00:00:00.000Z","end":f"20{fy-1}-08-01T00:00:00.000Z"},
-             {"start":f"20{fy-1}-08-01T00:00:00.000Z","end":f"20{fy-1}-09-01T00:00:00.000Z"},
-             {"start":f"20{fy-1}-09-01T00:00:00.000Z","end":f"20{fy-1}-10-01T00:00:00.000Z"},
-             {"start":f"20{fy-1}-10-01T00:00:00.000Z","end":f"20{fy-1}-11-01T00:00:00.000Z"},
-             {"start":f"20{fy-1}-11-01T00:00:00.000Z","end":f"20{fy-1}-12-01T00:00:00.000Z"},
-             {"start":f"20{fy-1}-12-01T00:00:00.000Z","end":f"20{fy}-01-01T00:00:00.000Z"},
-             {"start":f"20{fy}-01-01T00:00:00.000Z","end":f"20{fy}-02-01T00:00:00.000Z"},
-             {"start":f"20{fy}-02-01T00:00:00.000Z","end":f"20{fy}-03-01T00:00:00.000Z"},
-             {"start":f"20{fy}-03-01T00:00:00.000Z","end":f"20{fy}-04-01T00:00:00.000Z"},
-             {"start":f"20{fy}-04-01T00:00:00.000Z","end":f"20{fy}-05-01T00:00:00.000Z"},
-             {"start":f"20{fy}-05-01T00:00:00.000Z","end":f"20{fy}-06-01T00:00:00.000Z"},
-             {"start":f"20{fy}-06-01T00:00:00.000Z","end":f"20{fy}-07-01T00:00:00.000Z"},
-            ]
+months_yr1 = [f"{x}_20{fy-1}" for x in range(7,13)]
+months_yr2 = [f"{x}_20{fy}" for x in range(1,7)]
+months_yrs = months_yr1+months_yr2
 
 dfs_year = []
 
 print("looping through months")
-for index, month in enumerate(months_tf):
-    downloads = keen.count("s3_seshat.datasd.org_logs",
-                                timeframe=month,
-                                group_by=["log.key","log.user_agent"],
-                                interval="daily",
-                                filters=[{'property_name':'log.operation',
-                                   'operator':'contains',
-                                   'property_value':'GET.OBJECT'}])
-    df = pd.json_normalize(downloads, 'value', [['timeframe','end'],['timeframe','start']])
+for month in months_yrs:
+    df = pd.read_csv(f"s3://datasd.prod/kpi_dataportal/KPI_{month}.csv",low_memory=False)
     dfs_year.append(df)
     print(f"appended month {index}")
 
@@ -147,7 +124,7 @@ for index, month in enumerate(months_tf):
 print("Concatting months")
 df_year_all = pd.concat(dfs_year,ignore_index=True)
 
-df_year_all.to_csv(f'files/fy{fy}/keen_unprocessed.csv',index=False)
+df_year_all.to_csv(f'files/fy{fy}/aws_unprocessed.csv',index=False)
 
 
 df_year_process = process_results(df_year_all)
